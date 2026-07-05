@@ -1,0 +1,72 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue
+}
+
+% Section styling
+\titleformat{\section}{\large\bfseries\color{black}}{}{0em}{}[\titlerule]
+
+% Custom commands
+\newcommand{\name}[1]{\centerline{\Huge \bfseries #1}}
+\newcommand{\contact}[1]{\centerline{#1}}
+\newcommand{\sectionspace}{\vspace{8pt}}
+
+\begin{document}
+
+\name{MOK Owen}
+\contact{\href{mailto:owenmok202@outlook.com}{owenmok202@outlook.com} ~|~ +852-66860710 ~|~ github.com/Mokmokhi ~|~ linkedin.com/in/owen-mok-a150052a3/}
+\sectionspace
+
+\section*{Summary}
+A self-motivated programmer with sufficient foundation in Mathematics and supportive knowledge in Computer Science. Experienced in Python, C++, and web development. Passionate about building efficient software solutions and exploring new technologies, especially in exploring various algorithms.
+
+\section*{Skills}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Languages:} Python, C++, C\#, Pascal
+  \item \textbf{Web:} HTML5, CSS3, React, Node.js
+  \item \textbf{Frameworks:} Django, Flask, Express
+  \item \textbf{Tools:} Git, Linux, VSCode
+  \item \textbf{Databases:} MongoDB, AWS DynamoDB, MySQL
+  \item \textbf{Machine Learning:} PyTorch, TensorFlow, Scikit-learn
+  \item \textbf{Other:} LaTeX, Obsidian, LEAN4
+\end{itemize}
+\end{multicols}
+
+\section*{Projects}
+\textbf{AutoGNN Framework} \hfill \textit{Python, PyTorch, NetworkX} \\
+Built a modular GNN pipeline for representation learning and region-of-interest discovery, with interpretable attention modules and offline RL training via Conservative Q-Learning. \\
+\textit{Highlights: custom GAT and VGAE modules, ROI agent with actor-critic, dynamic entropy penalty modeling.}\\
+
+\noindent\textbf{Pacman} \hfill \textit{C\#} \\
+Developed a Pacman game using C\# with a custom AI agent that simulate NPC's actions. The first successful project with university teammates.
+
+\section*{Work Experience}
+\textbf{Tutor, Total Wise Limited} \hfill \textit{Jun 2023 -- Aug 2025} \\
+\begin{itemize}[leftmargin=*]
+  \item Preparing and distributing learning materials for colleagues using LaTeX.
+  \item Deeply explain mathematical logic to highschool students with attractive thoughts.
+  \item Sharing teaching understanding with co-workers, improving the working strategies.
+\end{itemize}
+
+\section*{Education}
+\textbf{M. Sc. in Mathematics} \hfill \textit{Expected Graduation: Aug 2026} \\
+The Chinese University of Hong Kong \\
+\textit{Relevant Courses:} Mathematical Principles of Artificial Intelligence (A), Topics in Number Theory (A), Computational Mathematics (A-), Linear Analysis (A-)\\
+
+\noindent\textbf{B.Sc. in Mathematics} \hfill \textit{Gaduated: Aug 2023} \\
+The Chinese University of Hong Kong \\
+\textit{Relevant Courses:} Computer Principles and C++ Programming (A), Software Engineering (A), Fundamental in Machine Learning (B+), Optimization Theory (B+), Game Theory (B+)
+
+\section*{Languages}
+Chinese (Native), English (Fluent), Mandarin (Fluent), Japanese (Intermediate)
+
+\end{document}
+% End of cv.tex
