@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owen Mok | Mathematics Tutor</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Owen Mok <span class="logo-sub">.maths</span></div>
+        <ul class="nav-tabs">
+            <li><a class="tab-link active" onclick="switchTab(event, 'home')" data-i18n="nav-home">Home Profile</a></li>
+            <li><a class="tab-link" onclick="switchTab(event, 'notes')" data-i18n="nav-wardrobe">Math Wardrobe</a></li>
+            <li><a class="tab-link" onclick="switchTab(event, 'contact')" data-i18n="nav-contact">Contact & Socials</a></li>
+            
+            <li class="lang-selector-wrapper">
+                <select id="lang-switcher" onchange="handleLanguageChange(this.value)">
+                    <option value="en">English (EN)</option>
+                    <option value="zh">繁體中文 (ZH)</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <section id="home" class="tab-content active">
+            <div class="hero">
+                <h1>Owen Mok</h1>
+                <p class="hero-tagline" data-i18n="hero-tagline">CUHK BSc & MSc in Mathematics | M1 Specialist at Aspire Education</p>
+                <p class="hero-philosophy" data-i18n="hero-philosophy">
+                    "True mastery is understanding <strong>why</strong> a formula works, not just memorizing how it looks. 
+                    I bridge the gap between elegant mathematical theory and rigorous examination skills."
+                </p>
+                
+                <div class="portal-redirect-wrapper">
+                    <a href="https://www.aspireeducation.hk" target="_blank" class="aspire-portal-btn">
+                        <span class="portal-icon">🏫</span> <span data-i18n="portal-btn-text">Explore My Courses at</span> <strong class="portal-brand">Aspire Education</strong>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="grid">
+                <div class="card border-blue">
+                    <h3 data-i18n="card-profile-title">🎓 Academic Profile</h3>
+                    <p data-i18n="card-profile-body">Graduated with both a <strong>BSc and MSc in Mathematics</strong> from The Chinese University of Hong Kong (CUHK). A dedicated Pure Mathematics learner with a particular fascination for <strong>Algebraic Geometry</strong>.</p>
+                </div>
+                <div class="card border-orange">
+                    <h3 data-i18n="card-exp-title">🏫 Teaching Experience</h3>
+                    <p data-i18n="card-exp-body">Over <strong>5 years of professional tutoring experience</strong>. Currently specializing in teaching HKDSE <strong>Mathematics Module 1 (M1)</strong> at <strong>Aspire Education</strong>.</p>
+                </div>
+                <div class="card border-green">
+                    <h3 data-i18n="card-pedagogy-title">💡 Pedagogical Focus</h3>
+                    <p data-i18n="card-pedagogy-body">Constantly refining my craft. I design original, custom problem sets and meticulously polish presentation flows and practical examples to ensure absolute intuitive clarity.</p>
+                </div>
+            </div>
+
+            <div class="slideshow-container">
+                <h2 data-i18n="slide-title">📸 Ongoing Courses & IG Insights</h2>
+                <p class="section-subtitle" data-i18n="slide-subtitle">Watch preview clips of my latest video guides. Click any slide to go to my full Instagram profile:</p>
+                
+                <div class="slideshow-wrapper">
+                    <div class="profile-slide fade">
+                        <a href="https://www.instagram.com/owenmok_maths" target="_blank" class="video-slide-link">
+                            <video class="slide-video-element" muted playsinline loop poster="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1000&q=80">
+                                <source src="videos/course1.mp4" type="video/mp4">
+                            </video>
+                            <div class="slide-caption"><span data-i18n="slide-cap-1">🎯 HKDSE M1: Intensive Calculus Tutorial</span> <span class="ig-action-lbl" data-i18n="slide-ig-click">(Click to watch full video on IG)</span></div>
+                        </a>
+                    </div>
+
+                    <div class="profile-slide fade">
+                        <a href="https://www.instagram.com/owenmok_maths" target="_blank" class="video-slide-link">
+                            <video class="slide-video-element" muted playsinline loop poster="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1000&q=80">
+                                <source src="videos/course2.mp4" type="video/mp4">
+                            </video>
+                            <div class="slide-caption"><span data-i18n="slide-cap-2">🧠 Problem Curation Insights: From First Principles</span> <span class="ig-action-lbl" data-i18n="slide-ig-click">(Click to watch full video on IG)</span></div>
+                        </a>
+                    </div>
+
+                    <div class="profile-slide fade">
+                        <a href="https://www.instagram.com/owenmok_maths" target="_blank" class="video-slide-link">
+                            <video class="slide-video-element" muted playsinline loop poster="https://images.unsplash.com/photo-1607988795691-3d0147b43231?auto=format&fit=crop&w=1000&q=80">
+                                <source src="videos/course3.mp4" type="video/mp4">
+                            </video>
+                            <div class="slide-caption"><span data-i18n="slide-cap-3">🏛️ Exam Techniques vs. Deep Theoretical Impacts</span> <span class="ig-action-lbl" data-i18n="slide-ig-click">(Click to watch full video on IG)</span></div>
+                        </a>
+                    </div>
+
+                    <a class="slide-prev" onclick="moveSlides(-1)">&#10094;</a>
+                    <a class="slide-next" onclick="moveSlides(1)">&#10095;</a>
+                </div>
+
+                <div class="slideshow-dots">
+                    <span class="slide-dot" onclick="currentSlide(1)"></span>
+                    <span class="slide-dot" onclick="currentSlide(2)"></span>
+                    <span class="slide-dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+            <div class="research-section">
+                <h2 data-i18n="research-title">🔬 Pure Mathematical Research & Interests</h2>
+                <p class="section-subtitle" data-i18n="research-subtitle">Investigating geometric properties of algebraic varieties and polynomial solution spaces:</p>
+                
+                <div class="research-box">
+                    <div class="research-project-item">
+                        <h4 data-i18n="research-p1-title">Foundations in Classical Algebraic Geometry</h4>
+                        <p data-i18n="research-p1-body">Focusing on the deep geometric interpretation of zero-sets of multivariate polynomials over algebraically closed fields. Bridging algebraic properties of coordinate rings with structural topology properties of varieties.</p>
+                        <span class="research-badge-item" data-i18n="research-p1-tag1">Commutative Algebra</span>
+                        <span class="research-badge-item" data-i18n="research-p1-tag2">Zariski Topology</span>
+                    </div>
+
+                    <div class="research-project-item">
+                        <h4 data-i18n="research-p2-title">Pedagogical Implementations of Advanced Analysis</h4>
+                        <p data-i18n="research-p2-body">Exploring how principles from higher-order Linear Analysis Techniques (MMAT 5010) and Complex Variables expand the toolkit used to generate elegant, non-standard optimization problems for advanced second-stage secondary students.</p>
+                        <span class="research-badge-item" data-i18n="research-p2-tag1">Problem Synthesis</span>
+                        <span class="research-badge-item" data-i18n="research-p2-tag2">Complex Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="courses-section">
+                <h2 data-i18n="courses-title">Advanced Mathematical Background</h2>
+                <p class="section-subtitle" data-i18n="courses-subtitle">Selected MSc & Advanced Coursework from CUHK:</p>
+                <div class="courses-grid">
+                    <span class="course-badge">MMAT 5010 Linear Analysis</span>
+                    <span class="course-badge">MMAT 5110 Topics in Number Theory</span>
+                    <span class="course-badge">MMAT 5220 Complex Analysis & Its Appl'ns</span>
+                    <span class="course-badge">MMAT 5320 Computational Mathematics</span>
+                    <span class="course-badge">MMAT 5340 Probability & Stochastic Analysis</span>
+                    <span class="course-badge">MMAT 5350 Coding Theory</span>
+                    <span class="course-badge">MMAT 5392 Mathematical Principles of AI</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="notes" class="tab-content">
+            <div class="access-tunnel-bar">
+                <div class="tunnel-status">
+                    <span data-i18n="tunnel-status-lbl">Current Face:</span> <span id="tunnel-view-label" class="status-badge external" data-i18n="tunnel-badge-external">External Guest Mode</span>
+                </div>
+                <div class="tunnel-controls">
+                    <button id="btn-toggle-internal" onclick="enterInternalFace()" class="btn-tunnel-action admin-key" data-i18n="tunnel-btn-internal">🔑 Access Internal Face</button>
+                    <button id="btn-toggle-external" onclick="exitInternalFace()" class="btn-tunnel-action hidden" data-i18n="tunnel-btn-external">🔒 Lock to External Face</button>
+                </div>
+            </div>
+
+            <h2 data-i18n="wardrobe-title">🗄️ The Math Notes Wardrobe</h2>
+            <p id="wardrobe-description" data-i18n="wardrobe-desc-external">Browsing public DSE curriculum guides, handouts, and curated exam problem scripts.</p>
+
+            <div class="wardrobe-controls-wrapper">
+                <div class="search-box-container">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="wardrobe-search-bar" oninput="handleSearchInput()">
+                </div>
+                
+                <div class="wardrobe-filters">
+                    <span class="filter-chip active" onclick="filterCategory('All')" data-i18n="filter-all">All Items</span>
+                    <span class="filter-chip" onclick="filterCategory('M1 Core')" data-i18n="filter-m1">M1 Core</span>
+                    <span class="filter-chip" onclick="filterCategory('Pure Math')" data-i18n="filter-pure">Pure Math</span>
+                    <span class="filter-chip" onclick="filterCategory('Exam Skills')" data-i18n="filter-skills">Exam Skills</span>
+                    <span class="filter-chip" onclick="filterCategory('AI & Comp')" data-i18n="filter-ai">AI & Comp</span>
+                </div>
+            </div>
+
+            <div class="wardrobe-workspace">
+                <div id="wardrobe-admin-sidebar" class="wardrobe-sidebar hidden">
+                    <div class="wardrobe-panel">
+                        <h3 id="form-panel-title" data-i18n="form-title-new">Hang New Note Hanger</h3>
+                        <form id="note-form" onsubmit="handleFormSubmit(event)">
+                            <input type="hidden" id="edit-note-id" value="">
+                            
+                            <div class="form-group">
+                                <input type="text" id="note-title" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="note-category" required>
+                                    <option value="" disabled selected id="opt-select-tag" data-i18n="form-select-tag">Select Tag</option>
+                                    <option value="M1 Core">M1 Core</option>
+                                    <option value="Pure Math">Pure Math</option>
+                                    <option value="Exam Skills">Exam Skills</option>
+                                    <option value="AI & Comp">AI & Comp</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="input-label" data-i18n="form-pdf-label">📄 Attach PDF Handouts:</label>
+                                <div id="dropzone" class="dropzone-area" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
+                                    <div class="dropzone-text" id="dropzone-text-label" data-i18n="form-dropzone-text">📥 Drag & Drop PDFs here</div>
+                                    <input type="file" id="note-files" accept=".pdf" multiple onchange="handleFileSelect(event)">
+                                </div>
+                                <div id="selected-files-list" class="staged-files"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="note-body" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" id="btn-form-submit" class="btn-success" data-i18n="form-btn-submit-new">Hang in Wardrobe</button>
+                            <button type="button" id="btn-cancel-edit" onclick="resetFormState()" class="btn-secondary hidden" data-i18n="form-btn-cancel">Cancel Editing</button>
+                        </form>
+
+                        <div class="wardrobe-io">
+                            <h4 data-i18n="io-title">Database Management</h4>
+                            <button onclick="exportNotesFile()" class="btn-secondary" data-i18n="io-btn-export">📤 Export Manifest (.JSON)</button>
+                            <label class="file-upload-btn"><span data-i18n="io-btn-import">📥 Restore Configuration</span><input type="file" id="upload-json" accept=".json" onchange="uploadNotesFile(event)"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wardrobe-main">
+                    <div id="preview-drawer" class="preview-panel hidden">
+                        <div class="preview-header">
+                            <span id="preview-title" data-i18n="preview-header-lbl">Document Viewer</span>
+                            <div class="preview-controls-right">
+                                <a id="fallback-download-btn" href="#" download class="btn-action-toolbar" data-i18n="preview-btn-download">💾 Download Handout</a>
+                                <button onclick="closePreview()" class="btn-close-preview" data-i18n="preview-btn-close">✕ Close Preview</button>
+                            </div>
+                        </div>
+                        <div id="preview-frame-wrapper" class="preview-frame-container"></div>
+                    </div>
+
+                    <div id="notes-wardrobe-list" class="notes-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="tab-content">
+            <h2 data-i18n="contact-title">Connect & Collaborate</h2>
+            <p data-i18n="contact-subtitle">Whether you want to build foundational mathematical intuition, enquire about active course structures, or talk algebraic shapes, feel free to reach out.</p>
+            
+            <div class="contact-channels-grid">
+                <div class="contact-mail-card">
+                    <div class="mail-header-row">
+                        <span class="mail-badge personal" data-i18n="mail-badge-personal">Personal Contact</span>
+                        <span class="mail-icon">✉️</span>
+                    </div>
+                    <h4>Owen Mok</h4>
+                    <p class="mail-address-link">
+                        <a href="mailto:owenmok202@outlook.com">owenmok202@outlook.com</a>
+                    </p>
+                    <span class="mail-use-personal" data-i18n="mail-use-personal">Best for pure research collaboration and mathematical inquiries.</span>
+                </div>
+
+                <div class="contact-mail-card">
+                    <div class="mail-header-row">
+                        <span class="mail-badge academic" data-i18n="mail-badge-academic">Academic Venue</span>
+                        <span class="mail-icon">🏫</span>
+                    </div>
+                    <h4>Aspire Education Faculty</h4>
+                    <p class="mail-address-link">
+                        <a href="mailto:owenmok@aspire.edu.hk">owenmok@aspire.edu.hk</a>
+                    </p>
+                    <span class="mail-use-academic" data-i18n="mail-use-academic">Best for student course registration, syllabus questions, and institutional messages.</span>
+                </div>
+            </div>
+
+            <div class="grid" style="margin-top: 2rem;">
+                <div class="card border-blue" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 data-i18n="card-social-title">📱 Social Media Channels</h3>
+                        <p data-i18n="card-social-body">I post math problem breakdowns, study tracking metrics, and dynamic workout flows across channels:</p>
+                    </div>
+                    <p style="margin-top: 1rem;">
+                        <strong>Instagram & Threads:</strong> <a href="https://www.instagram.com/owenmok_maths" target="_blank" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">@owenmok_maths</a>
+                    </p>
+                </div>
+                
+                <div class="card border-orange" style="display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 data-i18n="card-hub-title">🏛️ Institutional Hub</h3>
+                        <p data-i18n="card-hub-body">Learn more about our structured secondary school mathematics teaching systems, operational hours, and class materials.</p>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://www.aspireeducation.hk" target="_blank" class="aspire-embedded-link-btn" data-i18n="card-hub-btn">Visit Aspire Corporate Web →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
