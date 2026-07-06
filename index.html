@@ -16,8 +16,14 @@
         <ul class="nav-tabs">
             <li><a class="tab-link active" onclick="switchTab(event, 'home')" data-i18n="nav-home">Home Profile</a></li>
             <li><a class="tab-link" onclick="switchTab(event, 'notes')" data-i18n="nav-wardrobe">Math Wardrobe</a></li>
+            <li><a class="tab-link" onclick="switchTab(event, 'exercises')" data-i18n="nav-exercises">Self-made Exercises</a></li>
             <li><a class="tab-link" onclick="switchTab(event, 'contact')" data-i18n="nav-contact">Contact & Socials</a></li>
             
+            <li class="nav-tunnel-wrapper">
+                <button onclick="enterInternalFace()" class="btn-nav-tunnel btn-toggle-internal" data-i18n="tunnel-btn-internal">🔑 Access Internal Face</button>
+                <button onclick="exitInternalFace()" class="btn-nav-tunnel btn-toggle-external hidden" data-i18n="tunnel-btn-external">🔒 Lock to External Face</button>
+            </li>
+
             <li class="lang-selector-wrapper">
                 <select id="lang-switcher" onchange="handleLanguageChange(this.value)">
                     <option value="en">English (EN)</option>
@@ -29,34 +35,87 @@
 
     <div class="container">
 
+        <!-- --- HOME TAB CONTENT --- -->
         <section id="home" class="tab-content active">
             <div class="hero">
-                <h1>Owen Mok</h1>
-                <p class="hero-tagline" data-i18n="hero-tagline">CUHK BSc & MSc in Mathematics | M1 Specialist at Aspire Education</p>
-                <p class="hero-philosophy" data-i18n="hero-philosophy">
-                    "True mastery is understanding <strong>why</strong> a formula works, not just memorizing how it looks. 
-                    I bridge the gap between elegant mathematical theory and rigorous examination skills."
-                </p>
-                
-                <div class="portal-redirect-wrapper">
-                    <a href="https://www.aspireeducation.hk" target="_blank" class="aspire-portal-btn">
-                        <span class="portal-icon">🏫</span> <span data-i18n="portal-btn-text">Explore My Courses at</span> <strong class="portal-brand">Aspire Education</strong>
-                    </a>
+                <div class="hero-layout">
+                    <img src="/Pics/Propic.png" alt="Owen Mok" class="profile-photo">
+                    <div class="hero-text">
+                        <h1>Owen Mok</h1>
+                        <p class="hero-tagline" data-i18n="hero-tagline">CUHK BSc & MSc in Mathematics | M1 & Olympiad Specialist</p>
+                        <p class="hero-philosophy" data-i18n="hero-philosophy">
+                            "True mastery is understanding <strong>why</strong> a formula works, not just memorizing how it looks. 
+                            I bridge the gap between elegant mathematical theory and rigorous examination skills."
+                        </p>
+                        
+                        <div class="portal-redirect-wrapper">
+                            <a href="https://www.aspireeducation.hk/2026-%e6%95%b8%e5%ad%b8%e6%9a%91%e6%9c%9f%e8%aa%b2%e7%a8%8b/" target="_blank" class="aspire-portal-btn">
+                                <span class="portal-icon">🏫</span> <span data-i18n="portal-btn-text">Explore My Courses at</span> <strong class="portal-brand">Aspire Education</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="student-words-section">
+                <h2 data-i18n="student-words-title">💡 Words to Students</h2>
+                <div class="student-words-quote">
+                    <span class="quote-mark open">“</span>
+                    <p data-i18n="student-words-body">
+                        In the age of AI, human efficiency alone is no longer enough to secure our edge — AI learns faster and holds more data than any human ever can. But instead of giving up, we must adapt. Our focus must shift to mastering how to control, leverage, and mature our skills using AI tools. Ultimately, the true core value of learning today is mastering how to adapt to this rapidly changing world.
+                    </p>
+                    <span class="quote-mark close">”</span>
                 </div>
             </div>
             
             <div class="grid">
                 <div class="card border-blue">
                     <h3 data-i18n="card-profile-title">🎓 Academic Profile</h3>
-                    <p data-i18n="card-profile-body">Graduated with both a <strong>BSc and MSc in Mathematics</strong> from The Chinese University of Hong Kong (CUHK). A dedicated Pure Mathematics learner with a particular fascination for <strong>Algebraic Geometry</strong>.</p>
+                    <p data-i18n="card-profile-body">Graduated with both a <strong>BSc and MSc in Mathematics</strong> from The Chinese University of Hong Kong (CUHK). Completed secondary education at <strong>St. Francis Xavier's College (SFXC)</strong>. Dedicated Pure Mathematics learner focusing on <strong>Algebraic Geometry</strong>.</p>
                 </div>
                 <div class="card border-orange">
                     <h3 data-i18n="card-exp-title">🏫 Teaching Experience</h3>
-                    <p data-i18n="card-exp-body">Over <strong>5 years of professional tutoring experience</strong>. Currently specializing in teaching HKDSE <strong>Mathematics Module 1 (M1)</strong> at <strong>Aspire Education</strong>.</p>
+                    <p data-i18n="card-exp-body">Over <strong>5 years of professional tutoring experience</strong>. Specialized HKDSE <strong>Mathematics Module 1 (M1)</strong> Specialist at <strong>Aspire Education</strong>. Former part-time tutor of Olympiad Mathematics at <strong>HKMO</strong>, assigned to teach P.6 and Junior form Olympiad Maths.</p>
                 </div>
                 <div class="card border-green">
                     <h3 data-i18n="card-pedagogy-title">💡 Pedagogical Focus</h3>
                     <p data-i18n="card-pedagogy-body">Constantly refining my craft. I design original, custom problem sets and meticulously polish presentation flows and practical examples to ensure absolute intuitive clarity.</p>
+                </div>
+            </div>
+
+            <div class="goals-section">
+                <h2 data-i18n="goals-title">🎯 Teaching Goals</h2>
+                <div class="goals-grid">
+                    <div class="card border-blue">
+                        <h4 data-i18n="goal-1-title">Syllabus Reconstruction</h4>
+                        <p data-i18n="goal-1-body">Decompose and reform the syllabus as logical as possible.</p>
+                    </div>
+                    <div class="card border-orange">
+                        <h4 data-i18n="goal-2-title">Higher Math Integration</h4>
+                        <p data-i18n="goal-2-body">Obtaining ideas / theorems from higher mathematics like Real and Complex Analysis, Algebraic Geometry, Linear Algebra, AI, and Machine Learning, and turn them into secondary level mathematics questions.</p>
+                    </div>
+                    <div class="card border-green">
+                        <h4 data-i18n="goal-3-title">Unique Exam Curations</h4>
+                        <p data-i18n="goal-3-body">Forming mathematics exam problems with unique insights on different topics.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="research-section">
+                <h2 data-i18n="projects-title">📂 Current Projects</h2>
+                <div class="research-box">
+                    <div class="research-project-item">
+                        <h4 data-i18n="proj-1-title">Studying Algebraic Geometry</h4>
+                        <p data-i18n="proj-1-body">Deepening foundational and modern understanding of Algebraic Geometry, coordinate rings, and solution sets.</p>
+                    </div>
+                    <div class="research-project-item">
+                        <h4 data-i18n="proj-2-title">Exploring AI tools on studying mathematics</h4>
+                        <p data-i18n="proj-2-body">Investigating the integration and application of AI tools in studying and processing higher mathematics.</p>
+                    </div>
+                    <div class="research-project-item">
+                        <h4 data-i18n="proj-3-title">M1 Notes Creation</h4>
+                        <p data-i18n="proj-3-body">Developing comprehensive notes across the complete M1 syllabus: from Binomial Theorem, limits, calculus fields, estimation techniques through trapezoidal rules, to sampling distributions and confidence intervals.</p>
+                    </div>
                 </div>
             </div>
 
@@ -66,169 +125,183 @@
                 
                 <div class="slideshow-wrapper">
                     <div class="profile-slide fade">
-                        <a href="https://www.instagram.com/owenmok_maths" target="_blank" class="video-slide-link">
-                            <video class="slide-video-element" muted playsinline loop poster="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1000&q=80">
-                                <source src="videos/course1.mp4" type="video/mp4">
+                        <a href="https://www.instagram.com/p/DYmodYuNpkM/" target="_blank" class="video-slide-link">
+                            <video class="slide-video-element" autoplay muted playsinline loop poster="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1000&q=80">
+                                <source src="videos/jayden.mp4" type="video/mp4">
                             </video>
-                            <div class="slide-caption"><span data-i18n="slide-cap-1">🎯 HKDSE M1: Intensive Calculus Tutorial</span> <span class="ig-action-lbl" data-i18n="slide-ig-click">(Click to watch full video on IG)</span></div>
+                            <div class="slide-caption"><span data-i18n="slide-cap-1">🎯 HKDSE M1: Summer Course </span> <span class="ig-action-lbl" data-i18n="slide-ig-click">(Click to watch full video on IG)</span></div>
                         </a>
                     </div>
-
-                    <div class="profile-slide fade">
-                        <a href="https://www.instagram.com/owenmok_maths" target="_blank" class="video-slide-link">
-                            <video class="slide-video-element" muted playsinline loop poster="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=1000&q=80">
-                                <source src="videos/course2.mp4" type="video/mp4">
-                            </video>
-                            <div class="slide-caption"><span data-i18n="slide-cap-2">🧠 Problem Curation Insights: From First Principles</span> <span class="ig-action-lbl" data-i18n="slide-ig-click">(Click to watch full video on IG)</span></div>
-                        </a>
-                    </div>
-
-                    <div class="profile-slide fade">
-                        <a href="https://www.instagram.com/owenmok_maths" target="_blank" class="video-slide-link">
-                            <video class="slide-video-element" muted playsinline loop poster="https://images.unsplash.com/photo-1607988795691-3d0147b43231?auto=format&fit=crop&w=1000&q=80">
-                                <source src="videos/course3.mp4" type="video/mp4">
-                            </video>
-                            <div class="slide-caption"><span data-i18n="slide-cap-3">🏛️ Exam Techniques vs. Deep Theoretical Impacts</span> <span class="ig-action-lbl" data-i18n="slide-ig-click">(Click to watch full video on IG)</span></div>
-                        </a>
-                    </div>
-
                     <a class="slide-prev" onclick="moveSlides(-1)">&#10094;</a>
                     <a class="slide-next" onclick="moveSlides(1)">&#10095;</a>
                 </div>
-
                 <div class="slideshow-dots">
                     <span class="slide-dot" onclick="currentSlide(1)"></span>
-                    <span class="slide-dot" onclick="currentSlide(2)"></span>
-                    <span class="slide-dot" onclick="currentSlide(3)"></span>
-                </div>
-            </div>
-
-            <div class="research-section">
-                <h2 data-i18n="research-title">🔬 Pure Mathematical Research & Interests</h2>
-                <p class="section-subtitle" data-i18n="research-subtitle">Investigating geometric properties of algebraic varieties and polynomial solution spaces:</p>
-                
-                <div class="research-box">
-                    <div class="research-project-item">
-                        <h4 data-i18n="research-p1-title">Foundations in Classical Algebraic Geometry</h4>
-                        <p data-i18n="research-p1-body">Focusing on the deep geometric interpretation of zero-sets of multivariate polynomials over algebraically closed fields. Bridging algebraic properties of coordinate rings with structural topology properties of varieties.</p>
-                        <span class="research-badge-item" data-i18n="research-p1-tag1">Commutative Algebra</span>
-                        <span class="research-badge-item" data-i18n="research-p1-tag2">Zariski Topology</span>
-                    </div>
-
-                    <div class="research-project-item">
-                        <h4 data-i18n="research-p2-title">Pedagogical Implementations of Advanced Analysis</h4>
-                        <p data-i18n="research-p2-body">Exploring how principles from higher-order Linear Analysis Techniques (MMAT 5010) and Complex Variables expand the toolkit used to generate elegant, non-standard optimization problems for advanced second-stage secondary students.</p>
-                        <span class="research-badge-item" data-i18n="research-p2-tag1">Problem Synthesis</span>
-                        <span class="research-badge-item" data-i18n="research-p2-tag2">Complex Analysis</span>
-                    </div>
                 </div>
             </div>
 
             <div class="courses-section">
-                <h2 data-i18n="courses-title">Advanced Mathematical Background</h2>
-                <p class="section-subtitle" data-i18n="courses-subtitle">Selected MSc & Advanced Coursework from CUHK:</p>
-                <div class="courses-grid">
-                    <span class="course-badge">MMAT 5010 Linear Analysis</span>
-                    <span class="course-badge">MMAT 5110 Topics in Number Theory</span>
-                    <span class="course-badge">MMAT 5220 Complex Analysis & Its Appl'ns</span>
-                    <span class="course-badge">MMAT 5320 Computational Mathematics</span>
-                    <span class="course-badge">MMAT 5340 Probability & Stochastic Analysis</span>
-                    <span class="course-badge">MMAT 5350 Coding Theory</span>
-                    <span class="course-badge">MMAT 5392 Mathematical Principles of AI</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="notes" class="tab-content">
-            <div class="access-tunnel-bar">
-                <div class="tunnel-status">
-                    <span data-i18n="tunnel-status-lbl">Current Face:</span> <span id="tunnel-view-label" class="status-badge external" data-i18n="tunnel-badge-external">External Guest Mode</span>
-                </div>
-                <div class="tunnel-controls">
-                    <button id="btn-toggle-internal" onclick="enterInternalFace()" class="btn-tunnel-action admin-key" data-i18n="tunnel-btn-internal">🔑 Access Internal Face</button>
-                    <button id="btn-toggle-external" onclick="exitInternalFace()" class="btn-tunnel-action hidden" data-i18n="tunnel-btn-external">🔒 Lock to External Face</button>
-                </div>
-            </div>
-
-            <h2 data-i18n="wardrobe-title">🗄️ The Math Notes Wardrobe</h2>
-            <p id="wardrobe-description" data-i18n="wardrobe-desc-external">Browsing public DSE curriculum guides, handouts, and curated exam problem scripts.</p>
-
-            <div class="wardrobe-controls-wrapper">
-                <div class="search-box-container">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" id="wardrobe-search-bar" oninput="handleSearchInput()">
+                <h2 data-i18n="courses-title">Advanced Mathematical & Computing Background</h2>
+                <p class="section-subtitle" data-i18n="courses-subtitle-ai">Selected Coursework from CUHK (Click any bubble for detailed Gemini AI briefings):</p>
+                
+                <div class="curriculum-tier-container">
+                    <h3 class="tier-heading text-bsc">📜 Undergraduate Level Courses (BSc)</h3>
+                    <div id="bsc-courses-cloud" class="courses-bubbles-cloud flex-start-cloud"></div>
                 </div>
                 
-                <div class="wardrobe-filters">
-                    <span class="filter-chip active" onclick="filterCategory('All')" data-i18n="filter-all">All Items</span>
-                    <span class="filter-chip" onclick="filterCategory('M1 Core')" data-i18n="filter-m1">M1 Core</span>
-                    <span class="filter-chip" onclick="filterCategory('Pure Math')" data-i18n="filter-pure">Pure Math</span>
-                    <span class="filter-chip" onclick="filterCategory('Exam Skills')" data-i18n="filter-skills">Exam Skills</span>
-                    <span class="filter-chip" onclick="filterCategory('AI & Comp')" data-i18n="filter-ai">AI & Comp</span>
-                </div>
-            </div>
-
-            <div class="wardrobe-workspace">
-                <div id="wardrobe-admin-sidebar" class="wardrobe-sidebar hidden">
-                    <div class="wardrobe-panel">
-                        <h3 id="form-panel-title" data-i18n="form-title-new">Hang New Note Hanger</h3>
-                        <form id="note-form" onsubmit="handleFormSubmit(event)">
-                            <input type="hidden" id="edit-note-id" value="">
-                            
-                            <div class="form-group">
-                                <input type="text" id="note-title" required>
-                            </div>
-                            <div class="form-group">
-                                <select id="note-category" required>
-                                    <option value="" disabled selected id="opt-select-tag" data-i18n="form-select-tag">Select Tag</option>
-                                    <option value="M1 Core">M1 Core</option>
-                                    <option value="Pure Math">Pure Math</option>
-                                    <option value="Exam Skills">Exam Skills</option>
-                                    <option value="AI & Comp">AI & Comp</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="input-label" data-i18n="form-pdf-label">📄 Attach PDF Handouts:</label>
-                                <div id="dropzone" class="dropzone-area" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
-                                    <div class="dropzone-text" id="dropzone-text-label" data-i18n="form-dropzone-text">📥 Drag & Drop PDFs here</div>
-                                    <input type="file" id="note-files" accept=".pdf" multiple onchange="handleFileSelect(event)">
-                                </div>
-                                <div id="selected-files-list" class="staged-files"></div>
-                            </div>
-
-                            <div class="form-group">
-                                <textarea id="note-body" rows="3" required></textarea>
-                            </div>
-                            <button type="submit" id="btn-form-submit" class="btn-success" data-i18n="form-btn-submit-new">Hang in Wardrobe</button>
-                            <button type="button" id="btn-cancel-edit" onclick="resetFormState()" class="btn-secondary hidden" data-i18n="form-btn-cancel">Cancel Editing</button>
-                        </form>
-
-                        <div class="wardrobe-io">
-                            <h4 data-i18n="io-title">Database Management</h4>
-                            <button onclick="exportNotesFile()" class="btn-secondary" data-i18n="io-btn-export">📤 Export Manifest (.JSON)</button>
-                            <label class="file-upload-btn"><span data-i18n="io-btn-import">📥 Restore Configuration</span><input type="file" id="upload-json" accept=".json" onchange="uploadNotesFile(event)"></label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="wardrobe-main">
-                    <div id="preview-drawer" class="preview-panel hidden">
-                        <div class="preview-header">
-                            <span id="preview-title" data-i18n="preview-header-lbl">Document Viewer</span>
-                            <div class="preview-controls-right">
-                                <a id="fallback-download-btn" href="#" download class="btn-action-toolbar" data-i18n="preview-btn-download">💾 Download Handout</a>
-                                <button onclick="closePreview()" class="btn-close-preview" data-i18n="preview-btn-close">✕ Close Preview</button>
-                            </div>
-                        </div>
-                        <div id="preview-frame-wrapper" class="preview-frame-container"></div>
-                    </div>
-
-                    <div id="notes-wardrobe-list" class="notes-list"></div>
+                <div class="curriculum-tier-container" style="margin-top: 1.8rem; border-top: 1px dashed #cbd5e1; padding-top: 1.5rem;">
+                    <h3 class="tier-heading text-msc">🎓 Postgraduate Level Courses (MSc)</h3>
+                    <div id="msc-courses-cloud" class="courses-bubbles-cloud flex-start-cloud"></div>
                 </div>
             </div>
         </section>
 
+        <!-- --- MATH WARDROBE TAB CONTENT --- -->
+        <section id="notes" class="tab-content">
+            <div class="workspace-with-sidebar">
+                <div class="main-workspace-area">
+                    <h2 data-i18n="wardrobe-title">🗄️ The Math Notes Wardrobe</h2>
+                    <p class="wardrobe-description" data-i18n="wardrobe-desc-external" style="margin-bottom:1rem;">Browsing public DSE curriculum guides, handouts, and curated exam problem scripts.</p>
+
+                    <div class="wardrobe-controls-wrapper">
+                        <div class="search-box-container">
+                            <span class="search-icon">🔍</span>
+                            <input type="text" id="wardrobe-search-bar" oninput="handleSearchInput()">
+                        </div>
+                    </div>
+
+                    <div class="wardrobe-workspace">
+                        <div class="wardrobe-sidebar hidden wardrobe-admin-sidebar">
+                            <div class="wardrobe-panel">
+                                <h3 id="form-panel-title" data-i18n="form-title-new">Hang New Note Hanger</h3>
+                                <form id="note-form" onsubmit="handleFormSubmit(event)">
+                                    <input type="hidden" id="edit-note-id" value="">
+                                    <div class="form-group"><input type="text" id="note-title" required placeholder="Hanger Title"></div>
+                                    <div class="form-group">
+                                        <label class="input-label">🏷️ Tags:</label>
+                                        <input type="text" id="note-category" required placeholder="e.g., M1 Core, Probability, Calculus">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="color-picker-group">
+                                            <select id="note-tag-selector" onchange="loadExistingTagColor(this.value, 'note')"><option value="">-- Tag --</option></select>
+                                            <input type="color" id="note-tag-color" value="#34495e">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div id="dropzone" class="dropzone-area">
+                                            <div class="dropzone-text" data-i18n="form-dropzone-text">📥 Drop PDFs</div>
+                                            <input type="file" id="note-files" accept=".pdf" multiple onchange="handleFileSelect(event)">
+                                        </div>
+                                        <div id="selected-files-list" class="staged-files"></div>
+                                    </div>
+                                    <div class="form-group"><textarea id="note-body" rows="3" required placeholder="Brief caption..."></textarea></div>
+                                    <button type="submit" id="btn-form-submit" class="btn-success" data-i18n="form-btn-submit-new">Hang in Wardrobe</button>
+                                    <button type="button" id="btn-cancel-edit" onclick="resetFormState()" class="btn-secondary hidden" data-i18n="form-btn-cancel">Cancel</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="wardrobe-main">
+                            <div class="preview-drawer preview-panel hidden">
+                                <div class="preview-header">
+                                    <span class="preview-title" data-i18n="preview-header-lbl">Document Viewer</span>
+                                    <div class="preview-controls-right">
+                                        <a href="#" download class="btn-action-toolbar fallback-download-btn" data-i18n="preview-btn-download">💾 Download</a>
+                                        <button onclick="closePreview()" class="btn-close-preview" data-i18n="preview-btn-close">✕ Close</button>
+                                    </div>
+                                </div>
+                                <div class="preview-frame-container preview-frame-wrapper"></div>
+                            </div>
+                            <div id="notes-wardrobe-list" class="notes-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floating-chat-column">
+                    <div class="chat-header">💬 Live Feedback Board</div>
+                    <div id="notes-chat-feed" class="chat-messages-container"></div>
+                    <form onsubmit="postFloatingComment(event, 'notes')" class="chat-input-form">
+                        <input type="text" id="notes-chat-name" required placeholder="Nickname">
+                        <textarea id="notes-chat-text" rows="2" required placeholder="Send message..."></textarea>
+                        <button type="submit" class="btn-send-chat">Post</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- SELF-MADE EXERCISES TAB CONTENT --- -->
+        <section id="exercises" class="tab-content">
+            <div class="workspace-with-sidebar">
+                <div class="main-workspace-area">
+                    <h2 data-i18n="exercises-title">📝 Self-made Problem Sets & Exercises</h2>
+                    <p class="wardrobe-description" data-i18n="exercises-desc-external" style="margin-bottom:1rem;">Explore custom written problems featuring unique computational concepts and systematic analysis blueprints.</p>
+
+                    <div class="wardrobe-controls-wrapper">
+                        <div class="search-box-container">
+                            <span class="search-icon">🔍</span>
+                            <input type="text" id="exercises-search-bar" oninput="handleExerciseSearch()" placeholder="Search exercises...">
+                        </div>
+                    </div>
+
+                    <div class="wardrobe-workspace">
+                        <div class="wardrobe-sidebar hidden exercises-admin-sidebar">
+                            <div class="wardrobe-panel">
+                                <h3 id="ex-form-title" data-i18n="ex-form-new">Upload Custom Exercise Sheet</h3>
+                                <form id="exercise-form" onsubmit="handleExerciseFormSubmit(event)">
+                                    <input type="hidden" id="edit-ex-id" value="">
+                                    <div class="form-group"><input type="text" id="ex-title" required placeholder="Exercise Title"></div>
+                                    <div class="form-group">
+                                        <label class="input-label">🏷️ Tags:</label>
+                                        <input type="text" id="ex-category" required placeholder="e.g., Difficult, Algebra, Limits">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="color-picker-group">
+                                            <select id="ex-tag-selector" onchange="loadExistingTagColor(this.value, 'ex')"><option value="">-- Tag --</option></select>
+                                            <input type="color" id="ex-tag-color" value="#27ae60">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div id="ex-dropzone" class="dropzone-area">
+                                            <div class="dropzone-text" data-i18n="form-dropzone-text">📥 Drop PDFs</div>
+                                            <input type="file" id="ex-files" accept=".pdf" multiple onchange="handleExFileSelect(event)">
+                                        </div>
+                                        <div id="ex-selected-files" class="staged-files"></div>
+                                    </div>
+                                    <button type="submit" id="btn-ex-submit" class="btn-success">Upload</button>
+                                    <button type="button" id="btn-ex-cancel" onclick="resetExFormState()" class="btn-secondary hidden" data-i18n="form-btn-cancel">Cancel</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="wardrobe-main">
+                            <div class="ex-preview-drawer preview-panel hidden">
+                                <div class="preview-header">
+                                    <span class="ex-preview-title" data-i18n="preview-header-lbl">Document Viewer</span>
+                                    <div class="preview-controls-right">
+                                        <a href="#" download class="btn-action-toolbar ex-fallback-download-btn" data-i18n="preview-btn-download">💾 Download</a>
+                                        <button onclick="closeExPreview()" class="btn-close-preview" data-i18n="preview-btn-close">✕ Close</button>
+                                    </div>
+                                </div>
+                                <div class="preview-frame-container ex-preview-frame-wrapper"></div>
+                            </div>
+                            <div id="exercises-list" class="notes-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floating-chat-column">
+                    <div class="chat-header">💬 Live Feedback Board</div>
+                    <div id="exercises-chat-feed" class="chat-messages-container"></div>
+                    <form onsubmit="postFloatingComment(event, 'exercises')" class="chat-input-form">
+                        <input type="text" id="exercises-chat-name" required placeholder="Nickname">
+                        <textarea id="exercises-chat-text" rows="2" required placeholder="Send message..."></textarea>
+                        <button type="submit" class="btn-send-chat">Post</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- CONTACT TAB CONTENT --- -->
         <section id="contact" class="tab-content">
             <h2 data-i18n="contact-title">Connect & Collaborate</h2>
             <p data-i18n="contact-subtitle">Whether you want to build foundational mathematical intuition, enquire about active course structures, or talk algebraic shapes, feel free to reach out.</p>
@@ -240,10 +313,12 @@
                         <span class="mail-icon">✉️</span>
                     </div>
                     <h4>Owen Mok</h4>
-                    <p class="mail-address-link">
-                        <a href="mailto:owenmok202@outlook.com">owenmok202@outlook.com</a>
-                    </p>
+                    <p class="mail-address-link"><a href="mailto:owenmok202@outlook.com">owenmok202@outlook.com</a></p>
                     <span class="mail-use-personal" data-i18n="mail-use-personal">Best for pure research collaboration and mathematical inquiries.</span>
+                    <div class="whatsapp-row" style="margin-top: 1rem; border-top: 1px dashed #e2e8f0; padding-top: 0.8rem; font-size: 0.95rem;">
+                        <strong>🟢 WhatsApp Channel:</strong> 
+                        <a href="https://wa.me/85266860710" target="_blank" style="color: #27ae60; text-decoration: none; font-weight: bold; margin-left: 5px;">(+852) 6686 0710</a>
+                    </div>
                 </div>
 
                 <div class="contact-mail-card">
@@ -252,9 +327,7 @@
                         <span class="mail-icon">🏫</span>
                     </div>
                     <h4>Aspire Education Faculty</h4>
-                    <p class="mail-address-link">
-                        <a href="mailto:owenmok@aspire.edu.hk">owenmok@aspire.edu.hk</a>
-                    </p>
+                    <p class="mail-address-link"><a href="mailto:owenmok@aspire.edu.hk">owenmok@aspire.edu.hk</a></p>
                     <span class="mail-use-academic" data-i18n="mail-use-academic">Best for student course registration, syllabus questions, and institutional messages.</span>
                 </div>
             </div>
@@ -263,7 +336,7 @@
                 <div class="card border-blue" style="display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
                         <h3 data-i18n="card-social-title">📱 Social Media Channels</h3>
-                        <p data-i18n="card-social-body">I post math problem breakdowns, study tracking metrics, and dynamic workout flows across channels:</p>
+                        <p data-i18n="card-social-body">I post math problem breakdowns, study tracking metrics, and insights across channels:</p>
                     </div>
                     <p style="margin-top: 1rem;">
                         <strong>Instagram & Threads:</strong> <a href="https://www.instagram.com/owenmok_maths" target="_blank" style="color: var(--accent-blue); text-decoration: none; font-weight: 600;">@owenmok_maths</a>
@@ -283,6 +356,27 @@
         </section>
 
     </div>
+
+    <div id="gemini-ai-modal" class="ai-modal-overlay hidden" onclick="closeGeminiModal()">
+        <div class="ai-modal-card" onclick="event.stopPropagation()">
+            <div class="ai-modal-header">
+                <div class="ai-branding-row">
+                    <span class="ai-spark-icon">✨</span>
+                    <h4 id="ai-subject-code-heading">Course Overview</h4>
+                </div>
+                <button class="btn-close-ai-modal" onclick="closeGeminiModal()">✕</button>
+            </div>
+            <div class="ai-modal-body" id="ai-briefing-content-node"></div>
+            <div class="ai-modal-footer"><span>Powered by Google Gemini AI Model Integration Engine 2026</span></div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <span class="footer-left">Copyright &copy; Mok Owen and Google Gemini 2026. All Rights Reserved.</span>
+            <span class="footer-right"> Owen Mok .maths portal </span>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>

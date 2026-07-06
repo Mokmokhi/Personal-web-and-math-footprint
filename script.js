@@ -1,63 +1,50 @@
-// --- DICTIONARY DICTIONARIES MATRIX (EN & ZH-HK) ---
+// --- TRANSLATION ENGINE MATRIX ---
 const translations = {
     "en": {
         "nav-home": "Home Profile",
         "nav-wardrobe": "Math Wardrobe",
+        "nav-exercises": "Self-made Exercises",
         "nav-contact": "Contact & Socials",
-        "hero-tagline": "CUHK BSc & MSc in Mathematics | M1 Specialist at Aspire Education",
+        "hero-tagline": "CUHK BSc & MSc in Mathematics | M1 & Olympiad Specialist",
         "hero-philosophy": '"True mastery is understanding <strong>why</strong> a formula works, not just memorizing how it looks. I bridge the gap between elegant mathematical theory and rigorous examination skills."',
         "portal-btn-text": "Explore My Courses at",
+        "student-words-title": "💡 Words to Students",
+        "student-words-body": "In the age of AI, human efficiency alone is no longer enough to secure our edge—AI learns faster and holds more data than any human ever can. But instead of giving up, we must adapt. Our focus must shift to mastering how to control, leverage, and mature our skills using AI tools. Ultimately, the true core value of learning today is mastering how to adapt to this rapidly changing world.",
         "card-profile-title": "🎓 Academic Profile",
-        "card-profile-body": "Graduated with both a <strong>BSc and MSc in Mathematics</strong> from The Chinese University of Hong Kong (CUHK). A dedicated Pure Mathematics learner with a particular fascination for <strong>Algebraic Geometry</strong>.",
+        "card-profile-body": "Graduated with both a <strong>BSc and MSc in Mathematics</strong> from The Chinese University of Hong Kong (CUHK). Completed secondary education at <strong>St. Francis Xavier's College (SFXC)</strong>. Dedicated Pure Mathematics learner focusing on <strong>Algebraic Geometry</strong>.",
         "card-exp-title": "🏫 Teaching Experience",
-        "card-exp-body": "Over <strong>5 years of professional tutoring experience</strong>. Currently specializing in teaching HKDSE <strong>Mathematics Module 1 (M1)</strong> at <strong>Aspire Education</strong>.",
+        "card-exp-body": "Over <strong>5 years of professional tutoring experience</strong>. Specialized HKDSE <strong>Mathematics Module 1 (M1)</strong> Specialist at <strong>Aspire Education</strong>. Former part-time tutor of Olympiad Mathematics at <strong>HKMO</strong>, assigned to teach P.6 and Junior form Olympiad Maths.",
         "card-pedagogy-title": "💡 Pedagogical Focus",
         "card-pedagogy-body": "Constantly refining my craft. I design original, custom problem sets and meticulously polish presentation flows and practical examples to ensure absolute intuitive clarity.",
+        "goals-title": "🎯 Teaching Goals",
+        "goal-1-title": "Syllabus Reconstruction",
+        "goal-1-body": "Decompose and reform the syllabus as logical as possible.",
+        "goal-2-title": "Higher Math Integration",
+        "goal-2-body": "Obtaining ideas / theorems from higher mathematics like Real and Complex Analysis, Algebraic Geometry, Linear Algebra, AI, and Machine Learning, and turn them into secondary level mathematics questions.",
+        "goal-3-title": "Unique Exam Curations",
+        "goal-3-body": "Forming mathematics exam problems with unique insights on different topics.",
+        "projects-title": "📂 Current Projects",
+        "proj-1-title": "Studying Algebraic Geometry",
+        "proj-1-body": "Deepening foundational and modern understanding of Algebraic Geometry, coordinate rings, and solution sets.",
+        "proj-2-title": "Exploring AI tools on studying mathematics",
+        "proj-2-body": "Investigating the integration and application of AI tools in studying and processing higher mathematics.",
+        "proj-3-title": "M1 Notes Creation",
+        "proj-3-body": "Developing comprehensive notes across the complete M1 syllabus: from Binomial Theorem, limits, calculus fields, estimation techniques through trapezoidal rules, to sampling distributions and confidence intervals.",
         "slide-title": "📸 Ongoing Courses & IG Insights",
         "slide-subtitle": "Watch preview clips of my latest video guides. Click any slide to go to my full Instagram profile:",
-        "slide-cap-1": "🎯 HKDSE M1: Intensive Calculus Tutorial",
-        "slide-cap-2": "🧠 Problem Curation Insights: From First Principles",
-        "slide-cap-3": "🏛️ Exam Techniques vs. Deep Theoretical Impacts",
+        "slide-cap-1": "🎯 HKDSE M1: Summer Course",
         "slide-ig-click": "(Click to watch full video on IG)",
-        "research-title": "🔬 Pure Mathematical Research & Interests",
-        "research-subtitle": "Investigating geometric properties of algebraic varieties and polynomial solution spaces:",
-        "research-p1-title": "Foundations in Classical Algebraic Geometry",
-        "research-p1-body": "Focusing on the deep geometric interpretation of zero-sets of multivariate polynomials over algebraically closed fields. Bridging algebraic properties of coordinate rings with structural topology properties of varieties.",
-        "research-p1-tag1": "Commutative Algebra",
-        "research-p1-tag2": "Zariski Topology",
-        "research-p2-title": "Pedagogical Implementations of Advanced Analysis",
-        "research-p2-body": "Exploring how principles from higher-order Linear Analysis Techniques (MMAT 5010) and Complex Variables expand the toolkit used to generate elegant, non-standard optimization problems for advanced second-stage secondary students.",
-        "research-p2-tag1": "Problem Synthesis",
-        "research-p2-tag2": "Complex Analysis",
-        "courses-title": "Advanced Mathematical Background",
-        "courses-subtitle": "Selected MSc & Advanced Coursework from CUHK:",
-        "tunnel-status-lbl": "Current Face:",
-        "tunnel-badge-external": "External Guest Mode",
-        "tunnel-badge-internal": "Internal Face Mode",
+        "courses-title": "Advanced Mathematical & Computing Background",
+        "courses-subtitle-ai": "Selected Coursework from CUHK (Click any bubble for detailed Gemini AI briefing details):",
         "tunnel-btn-internal": "🔑 Access Internal Face",
         "tunnel-btn-external": "🔒 Lock to External Face",
         "wardrobe-title": "🗄️ The Math Notes Wardrobe",
         "wardrobe-desc-external": "Browsing public DSE curriculum guides, handouts, and curated exam problem scripts.",
-        "wardrobe-desc-internal": "ADMIN INTERFACE ACTIVE: Rearrange order via 2D grid matrix drag, update fields, or wipe hangers.",
-        "wardrobe-search-placeholder": "Search notes by title character matches...",
-        "filter-all": "All Items",
-        "filter-m1": "M1 Core",
-        "filter-pure": "Pure Math",
-        "filter-skills": "Exam Skills",
-        "filter-ai": "AI & Comp",
         "form-title-new": "Hang New Note Hanger",
-        "form-title-edit": "✏️ Edit Hanger Fields",
-        "form-placeholder-title": "Hanger Title",
-        "form-select-tag": "Select Tag",
         "form-pdf-label": "📄 Attach PDF Handouts:",
         "form-dropzone-text": "📥 Drag & Drop PDFs here",
-        "form-placeholder-body": "Brief caption context...",
         "form-btn-submit-new": "Hang in Wardrobe",
-        "form-btn-submit-edit": "Update Hanger Data",
         "form-btn-cancel": "Cancel Editing",
-        "io-title": "Database Management",
-        "io-btn-export": "📤 Export Manifest (.JSON)",
-        "io-btn-import": "📥 Restore Configuration",
         "preview-header-lbl": "Document Viewer",
         "preview-btn-download": "💾 Download Handout",
         "preview-btn-close": "✕ Close Preview",
@@ -67,75 +54,54 @@ const translations = {
         "mail-use-personal": "Best for pure research collaboration and mathematical inquiries.",
         "mail-badge-academic": "Academic Venue",
         "mail-use-academic": "Best for student course registration, syllabus questions, and institutional messages.",
-        "card-social-title": "📱 Social Media Channels",
-        "card-social-body": "I post math problem breakdowns, study tracking metrics, and dynamic workout flows across channels:",
-        "card-hub-title": "🏛️ Institutional Hub",
-        "card-hub-body": "Learn more about our structured secondary school mathematics teaching systems, operational hours, and class materials.",
-        "card-hub-btn": "Visit Aspire Corporate Web →",
-        "btn-lbl-edit": "✏️ Edit",
-        "btn-lbl-wipe": "🗑️ Wipe",
-        "lbl-handout-assets": "Handout Assets:",
-        "msg-empty-wardrobe": "Wardrobe compartment is empty.",
-        "msg-no-match": "No notes match your active criteria parameters."
+        "exercises-title": "📝 Self-made Problem Sets & Exercises",
+        "ex-form-new": "Upload Custom Exercise Sheet",
+        "passcode-prompt": "Please enter the passcode to access the internal face view:",
+        "passcode-error": "Authentication failed. Access restricted to External face."
     },
     "zh": {
         "nav-home": "個人簡介",
         "nav-wardrobe": "數人衣櫃",
+        "nav-exercises": "原創試題庫",
         "nav-contact": "聯絡方式",
-        "hero-tagline": "中大數學系學士及碩士 | 超研教育 M1 導師",
+        "hero-tagline": "中大數學系學士及碩士 | M1 及奧數培訓專家",
         "hero-philosophy": '"真正的掌握是理解公式<strong>背後的成因</strong>，而非單純死記硬背。我致力於在優雅的純數理論與嚴謹的應試技巧之間架起橋樑。"',
         "portal-btn-text": "瀏覽我的課程頁面：",
+        "student-words-title": "💡 給同學們的話",
+        "student-words-body": "在這個人工智能（AI）時代，單純追求人類個體的工作效率已不足以保障競爭優勢——AI 的學習速度和資訊容納量遠超任何人。然而，我們絕不能因此放棄，而必須學會適應。當前的核心焦點應該轉向如何掌控、利用 AI 工具，並使我們操作它的技術更趨成熟。說到底，當今學習的真正核心價值，就在於掌握如何在這樣一個疾速多變的世界中靈活地自我迭代。",
         "card-profile-title": "🎓 學術背景",
-        "card-profile-body": "畢業於<strong>香港中文大學（CUHK）數學系學士及碩士</strong>課程。熱衷於純粹數學研究，特別對<strong>代數幾何</strong>領域深感興趣。",
+        "card-profile-body": "畢業於<strong>香港中文大學（CUHK）數學系學士及碩士</strong>課程。於<strong>聖芳濟書院（SFXC）</strong>完成中學教育。熱衷於純粹數學研究，特別對<strong>代數幾何</strong>領域深感興趣。",
         "card-exp-title": "🏫 教學經驗",
-        "card-exp-body": "擁有超過 <strong>5 年專業數學補習經驗</strong>。現時於 <strong>超研教育</strong> 專科任教香港中學文憑試（HKDSE）<strong>數學延伸單元一（M1）</strong>課程。",
+        "card-exp-body": "擁有超過 <strong>5 年專業數學補習經驗</strong>。現時於 <strong>超研教育</strong> 專科任教香港中學文憑試（HKDSE）<strong>數學延伸單元一（M1）</strong>，並曾任<strong>香港數學奧林匹克總會（HKMO）</strong>兼職導師，負責任教小六及初中奧數班。",
         "card-pedagogy-title": "💡 教學理念",
         "card-pedagogy-body": "精益求精。我堅持親自設計原創、客製化的教學題目，並反覆琢磨課堂演示流程與實用範例，以確保概念達到絕對直觀的清晰度。",
+        "goals-title": "🎯 教學目標",
+        "goal-1-title": "課程重組",
+        "goal-1-body": "盡可能以最符合邏輯的方式拆解並重組課程大綱。",
+        "goal-2-title": "高等數學下放",
+        "goal-2-body": "從高等數學（如實分析、複分析、代數幾何、線性代數、人工智能、機器學習）中汲取概念與定理，並轉化為中學程度的數學題。",
+        "goal-3-title": "獨特試題編製",
+        "goal-3-body": "針對不同課題，以獨特見解編製專屬的數學考試題目。",
+        "projects-title": "📂 當前研究項目",
+        "proj-1-title": "鑽研代數幾何",
+        "proj-1-body": "深化對代數幾何的基礎與現代概念理解，探討坐報環與解空間的拓撲聯繫。",
+        "proj-2-title": "探索 AI 工具於數學學習的應用",
+        "proj-2-body": "研究如何整合並運用人工智能工具來協助學習與處理高等數學。",
+        "proj-3-title": "編寫 M1 教學筆記",
+        "proj-3-body": "涵蓋完整 M1 考綱精要：由二項式定理、極限、微積分應用，到梯形法則積分估算誤差，以及抽樣分佈與置信區間的深度整合研發。",
         "slide-title": "📸 現開課程 & 社交平台動態",
         "slide-subtitle": "觀看我最新的教學短片預覽。點擊任何投影片即可直接跳轉至我的 Instagram 帳號：",
-        "slide-cap-1": "🎯 HKDSE M1：微積分精華導學短片",
-        "slide-cap-2": "🧠 原創題目解析：從根本原理出發",
-        "slide-cap-3": "🏛️ 應試技巧與深層理論結構之平衡",
+        "slide-cap-1": "🎯 HKDSE M1：暑期課程宣傳短片",
         "slide-ig-click": "（點擊到 Instagram 觀看完整短片）",
-        "research-title": "🔬 純粹數學研究與學術興趣",
-        "research-subtitle": "探討代數簇（Algebraic Varieties）與多項式解空間的幾何性質：",
-        "research-p1-title": "經典代數幾何基礎研究",
-        "research-p1-body": "專注於探討代數封閉域上多變量多項式之零點集的深層幾何詮釋。結合交換代數與扎里斯基拓撲，研究坐標環的代數性質與代數簇結構性質的聯繫。",
-        "research-p1-tag1": "交換代數",
-        "research-p1-tag2": "扎里斯基拓撲",
-        "research-p2-title": "高等分析理論於中學教學之應用",
-        "research-p2-body": "探討如何將高等線性分析（MMAT 5010）及複變函數論的原理，轉化並融入高階中學題目中，為資優學生編製兼具深度與美感的非標準化優化問題。",
-        "research-p2-tag1": "題目編製",
-        "research-p2-tag2": "複分析",
-        "courses-title": "高等數學學術背景",
-        "courses-subtitle": "精選自香港中文大學（CUHK）碩士及高級課程：",
-        "tunnel-status-lbl": "當前視角：",
-        "tunnel-badge-external": "外部訪客模式",
-        "tunnel-badge-internal": "內部管理模式",
-        "tunnel-btn-internal": "🔑 進入內部管理面",
-        "tunnel-btn-external": "🔒 鎖定訪客面",
+        "courses-title": "高等數學與計算機學術背景",
+        "courses-subtitle-ai": "精選自香港中文大學（CUHK）歷年修讀之高級課程（點擊氣泡即可呼叫 Gemini AI 進行深度導讀細節）：",
         "wardrobe-title": "🗄️ 數學筆記衣櫥",
         "wardrobe-desc-external": "正在瀏覽公開的 DSE 課程指南、教學講義以及精選試題解析。",
-        "wardrobe-desc-internal": "管理權限已啟用：可通過 2D 矩陣拖拽調整順序、更新內容欄位或刪除衣架。",
-        "wardrobe-search-placeholder": "請輸入關鍵字搜尋筆記標題...",
-        "filter-all": "所有項目",
-        "filter-m1": "M1 專區",
-        "filter-pure": "純粹數學",
-        "filter-skills": "應試技巧",
-        "filter-ai": "人工智能與計算",
         "form-title-new": "掛置新筆記衣架",
-        "form-title-edit": "✏️ 編輯衣架屬性",
-        "form-placeholder-title": "請輸入筆記標題",
-        "form-select-tag": "選擇分類標籤",
         "form-pdf-label": "📄 附加 PDF 講義文檔：",
         "form-dropzone-text": "📥 將 PDF 拖拽至此處上傳",
-        "form-placeholder-body": "請輸入簡要的筆記摘要或章節導讀...",
         "form-btn-submit-new": "掛置入衣櫥",
-        "form-btn-submit-edit": "更新衣架數據",
         "form-btn-cancel": "取消編輯",
-        "io-title": "數據庫備份管理",
-        "io-btn-export": "📤 匯出數據清單 (.JSON)",
-        "io-btn-import": "📥 還原數據庫存",
         "preview-header-lbl": "文檔檢視器",
         "preview-btn-download": "💾 下載此講義文檔",
         "preview-btn-close": "✕ 關閉預覽",
@@ -145,553 +111,418 @@ const translations = {
         "mail-use-personal": "適合學術純數研究交流、原創命題討論及數學學術諮詢。",
         "mail-badge-academic": "教學機構",
         "mail-use-academic": "適合處理學生課程報名、教學大綱查詢及機構公務聯絡。",
-        "card-social-title": "📱 社交平台專頁",
-        "card-social-body": "我會在專頁定期分享數學試題拆解、教學進度追踪以及日常健身動態：",
-        "card-hub-title": "🏛️ 教學機構總部",
-        "card-hub-body": "深入了解我們針對中學數學設計的系統化教學架構、導師團隊、營業時間以及課堂實體配套材料。",
-        "card-hub-btn": "前往 超研教育 官方網站 →",
-        "btn-lbl-edit": "✏️ 編輯",
-        "btn-lbl-wipe": "🗑️ 刪除",
-        "lbl-handout-assets": "講義附件：",
-        "msg-empty-wardrobe": "該分類衣櫥目前空空如也。",
-        "msg-no-match": "沒有找到符合當前搜尋或篩選條件的筆記項目。"
+        "exercises-title": "📝 原創專題命題與訓練集",
+        "ex-form-new": "掛置新原創試卷卷軸",
+        "passcode-prompt": "請輸入安全通訊密碼以開啟管理面視角：",
+        "passcode-error": "安全校驗未通過。保持外部訪客模式。"
     }
 };
 
 let currentLang = localStorage.getItem('owen_site_lang') || 'en';
 
-// Fallback initial core dataset
+const defaultTagColors = { "M1 Core": "#e67e22", "Pure Math": "#9b59b6", "Calculus": "#3498db", "Difficult": "#e67e22" };
 const defaultNotes = [
-    {
-        id: 1718000000001,
-        title: "DSE Module 1 Probability Distributions Pack",
-        category: "M1 Core",
-        filesList: [],
-        body: "Poisson vs Binomial parameters comparison guide. Focuses heavily on the structural derivation of independent events over fixed intervals. Supports clean LaTeX identity validation parameters: \\(P(X=k) = \\frac{e^{-\\lambda}\\lambda^k}{k!}\\)"
-    },
-    {
-        id: 1718000000002,
-        title: "Introduction to Algebraic Curves & Zero Sets",
-        category: "Pure Math",
-        filesList: [],
-        body: "Personal conceptual proof notes mapping coordinate geometry equations into polynomial zero sets. Explores the elegant theoretical impact of Algebraic Geometry."
-    }
+    { id: 101, title: "Binomial Theorem and Mathematical Induction Notes", categories: ["M1 Core"], filesList: [], body: "Comprehensive guide exploring dynamic expansions up to \\((a+b)^n\\), combinations traits, and limits bounds." },
+    { id: 102, title: "Estimation of Definite Integrals via Trapezoidal Rule", categories: ["Calculus"], filesList: [], body: "Detailed error analysis scripts calculating bounds and intervals via rule structures: \\(\\int_a^b f(x)dx \\approx \\frac{\\Delta x}{2}[f(x_0)+2f(x_1)+\\dots+f(x_n)]\\)." }
+];
+const defaultExercises = [
+    { id: 201, title: "Discrete Random Variables & Confidence Interval Suite", categories: ["Difficult"], filesList: [] }
 ];
 
-let notesCollection = JSON.parse(localStorage.getItem('owen_wardrobe_v8')) || defaultNotes;
-let currentFilter = 'All';
-let searchQuery = '';
-let runtimeBlobDrive = {}; 
-let stagedFilesArray = []; 
-let isInternalFace = false; 
-let draggedElementId = null;
-let stickyExpandedCardId = null; 
+const initialNotesChats = [
+    { id: 1, name: "Dr. Lau", text: "Excellent pure mathematics integration maps on the M1 calculus guide!", timestamp: "14:20" },
+    { id: 2, name: "Student_A", text: "Are there additional trapezoidal proof scripts available?", timestamp: "18:05" }
+];
+const initialExercisesChats = [
+    { id: 1, name: "Jayden Chu", text: "The self-made exercise packs are highly challenging but super helpful for DSE scaling.", timestamp: "09:45" }
+];
 
-// Slideshow configurations
+const coursesDataStore = [
+    { code: "CSCI 3100", tier: "BSc", en: "Software Engineering", zh: "軟件工程" },
+    { code: "CSCI 3320", tier: "BSc", en: "Fund. of Machine Learning", zh: "機器學習基礎" },
+    { code: "MATH 3040", tier: "BSc", en: "Fields and Galois Theory", zh: "域與伽羅瓦論" },
+    { code: "MATH 3270", tier: "BSc", en: "Ordinary Diff Equations", zh: "常微分方程" },
+    { code: "MATH 4030", tier: "BSc", en: "Differential Geometry", zh: "微分幾何" },
+    { code: "MATH 4050", tier: "BSc", en: "Real Analysis", zh: "實分析" },
+    { code: "MATH 4230", tier: "BSc", en: "Optimization Theory", zh: "優化理論" },
+    { code: "MATH 4250", tier: "BSc", en: "Game Theory", zh: "博弈論" },
+    { code: "MMAT 5010", tier: "MSc", en: "Linear Analysis", zh: "線性分析" },
+    { code: "MMAT 5110", tier: "MSc", en: "Topics in Number Theory", zh: "數論專題" },
+    { code: "MMAT 5220", tier: "MSc", en: "Complex Analysis & Its Appl'ns", zh: "複分析及其應用" },
+    { code: "MMAT 5320", tier: "MSc", en: "Computational Mathematics", zh: "計算數學" },
+    { code: "MMAT 5340", tier: "MSc", en: "Probability & Stochastic Analysis", zh: "概率與隨機分析" },
+    { code: "MMAT 5350", tier: "MSc", en: "Coding Theory", zh: "編碼理論" },
+    { code: "MMAT 5392", tier: "MSc", en: "Mathematical Principles of AI", zh: "人工智能之數學原理" }
+];
+
+const geminiAiKnowledgeBase = {
+    "CSCI 3100": { en: "<strong>Software Engineering:</strong> Workflow cycles, agile tracking models, and structured deployment designs.", zh: "<strong>軟件工程：</strong> 研究系統級代碼週期開發流程、架構設計模式與大型軟件部署優化。" },
+    "CSCI 3320": { en: "<strong>Fundamentals of Machine Learning:</strong> Algorithmic focus on classification matrices, structural vector parameters, and optimization metrics.", zh: "<strong>機器學習基礎：</strong> 重點探討線性分類矩陣、多層神經網絡權重優化、以及統計預測學模型的收斂規律。" },
+    "MATH 3040": { en: "<strong>Fields and Galois Theory:</strong> Symmetries of radical fields extensions, tracking polynomial limits solvability shapes.", zh: "<strong>域與伽羅瓦論：</strong> 探討多項式根式可解性判別準則、體擴展結構、及利用群論剖析方程對稱性。" },
+    "MATH 3270": { en: "<strong>Ordinary Differential Equations:</strong> Linear algorithms modeling boundary stability frameworks.", zh: "<strong>常微分方程：</strong> 線性微分方程組求解、定性分析穩定性、解的唯一性定理及邊界值問題。" },
+    "MATH 4030": { en: "<strong>Differential Geometry:</strong> Curves curvatures tensors, localized shapes calculations, and Gaussian fields geometry manifolds.", zh: "<strong>微分幾何：</strong> 運用微積分工具演算空間曲線曲率、曲面第一/第二基本型、高斯曲率張量。" },
+    "MATH 4050": { en: "<strong>Real Analysis:</strong> Lebesgue measure spaces, measurable operators boundaries, and extreme calculus limits verification fields.", zh: "<strong>實分析：</strong> 奠基於勒貝格測度論，深挖可測函數、積分收斂控制定理，建立嚴謹的分析限界。" },
+    "MATH 4230": { en: "<strong>Optimization Theory:</strong> Convexity boundaries, Simplex gradient workflows, and Lagrange maximization metrics.", zh: "<strong>優化理論：</strong> 研究凸優化空間、拉格朗日乘子法對偶限界、單純形算法及非線性梯度優化。" },
+    "MATH 4250": { en: "<strong>Game Theory:</strong> Nash matrix configurations, cooperative strategic systems models, and zero-sum parameters trackers.", zh: "<strong>博弈論：</strong> 分析納什均衡點存在矩陣、零和博弈對策矩陣，提供在多決策主體衝突狀態下的最優解估算。" },
+    "MMAT 5010": { en: "<strong>Linear Analysis:</strong> Normed spaces boundaries, Banach space operations, and bounded operator spectral theorems.", zh: "<strong>線性分析：</strong> 深入研究賦範空間、巴拿赫空間與有界算子譜定理，解決無窮維空間的投影映射。" },
+    "MMAT 5110": { en: "<strong>Topics in Number Theory:</strong> Modular congruences arithmetic symmetries, primes reciprocal distributions, and cryptographic geometry blueprints.", zh: "<strong>數論專題：</strong> 聚焦同餘方程對稱性、質數分佈限界、二次互反律，並將代數數論幾何思維下放到現代網絡密碼學安全演算法。" },
+    "MMAT 5220": { en: "<strong>Complex Analysis & Its Applications:</strong> Holomorphic profiles, residue integrals calculus contour mappings, and conformal transformations.", zh: "<strong>複分析及其應用：</strong> 解析全純函數、 Cauchy 留數定理圍道積分。能將繁複的實函數瑕積分與振盪積分轉化為複平面上的極點留數運算。" },
+    "MMAT 5320": { en: "<strong>Computational Mathematics:</strong> Numerical linear matrices algorithms solvers, error vector monitoring, and approximation stabilization metrics.", zh: "<strong>計算數學：</strong> 建構高維矩陣數值求解器與疊代收斂方程，精準控制並監測中學 M1 考綱中梯形法則逼近定積分時產生的誤差極限。" },
+    "MMAT 5340": { en: "<strong>Probability & Stochastic Analysis:</strong> Random processes metrics, discrete Markov chains classification mechanics, and transition limits matrices.", zh: "<strong>概率與隨機分析：</strong> 鑽研連續隨機變量隨機進程、馬爾可夫鏈狀態分類（吸收態、不可約性）。是中學 M1 概率論、泊松分佈、正態分佈與區間估計的底層基礎理學體系。" },
+    "MMAT 5350": { en: "<strong>Coding Theory:</strong> Linear codes bounds metrics, Hamming distances, and vector parity error-checking blueprints.", zh: "<strong>編碼理論：</strong> 演算線性區塊碼限界、漢明距離與矩陣生成效驗糾錯機制，為高雜訊信道環境下的資訊無損傳輸與糾錯解碼提供數學框架。" },
+    "MMAT 5392": { en: "<strong>Mathematical Principles of AI:</strong> Optimization gradient descent spaces geometric topology vector mapping, neural network activation kernels, and loss curve bounds.", zh: "<strong>人工智能之數學原理：</strong> 從幾何拓撲與凸優化角度剖析梯度下降向量場、神經網絡多層權重矩陣映射、以及機器學習代價損失函數收斂極限的數理本質。" }
+};
+
+let tagColorsCollection = JSON.parse(localStorage.getItem('owen_tag_colors_v2')) || defaultTagColors;
+let notesCollection = JSON.parse(localStorage.getItem('owen_wardrobe_v10')) || defaultNotes;
+let exercisesCollection = JSON.parse(localStorage.getItem('owen_exercises_v4')) || defaultExercises;
+
+let notesChatStore = JSON.parse(localStorage.getItem('owen_notes_chats')) || initialNotesChats;
+let exercisesChatStore = JSON.parse(localStorage.getItem('owen_ex_chats')) || initialExercisesChats;
+
+let searchQuery = ''; let exerciseSearchQuery = '';
+let runtimeBlobDrive = {}; let stagedFilesArray = []; let exStagedFilesArray = [];
+let isInternalFace = false;
+
+// --- FIXED VARIABLES FOR SLIDESHOW RUNTIMES ---
 let slideIndex = 1;
-let slideshowTimer = null;
 
-/* --- NEW: i18n STATIC TRANSLATION ENGINE --- */
+function sortAlphabeticallyCaseSensitive(array) {
+    return array.sort((a, b) => {
+        const tA = a.title || ''; const tB = b.title || '';
+        return tA < tB ? -1 : (tA > tB ? 1 : 0);
+    });
+}
+
+function renderAdvancedBackgroundBubbles() {
+    const bscContainer = document.getElementById('bsc-courses-cloud');
+    const mscContainer = document.getElementById('msc-courses-cloud');
+    if (!bscContainer || !mscContainer) return;
+
+    bscContainer.innerHTML = ''; mscContainer.innerHTML = '';
+    
+    const sortedCourses = [...coursesDataStore].sort((a, b) => a.code < b.code ? -1 : (a.code > b.code ? 1 : 0));
+
+    sortedCourses.forEach(c => {
+        const bubble = document.createElement('div');
+        bubble.className = `course-bubble bubble-tier-${c.tier.toLowerCase()}`;
+        bubble.setAttribute('onclick', `invokeGeminiExplanation('${c.code}')`);
+        
+        const displayLabelName = currentLang === 'zh' ? c.zh : c.en;
+        bubble.innerHTML = `
+            <span class="bubble-code">${c.code} <span class="badge-tag-tier">[${c.tier}]</span></span>
+            <span class="bubble-name">${displayLabelName}</span>
+        `;
+        
+        if(c.tier === "BSc") bscContainer.appendChild(bubble);
+        else mscContainer.appendChild(bubble);
+    });
+}
+
 function applyTranslations() {
-    // 1. Set the switcher dropdown to reflect the current active language state
     document.getElementById('lang-switcher').value = currentLang;
-
-    // 2. Query all DOM nodes containing a "data-i18n" attribute
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[currentLang] && translations[currentLang][key]) {
-            // Using innerHTML allows formatting strings (like strong tags) inside dictionary definitions safely
             element.innerHTML = translations[currentLang][key];
         }
     });
-
-    // 3. Translate dynamic input placeholders
-    const searchBar = document.getElementById('wardrobe-search-bar');
-    if (searchBar) searchBar.placeholder = translations[currentLang]["wardrobe-search-placeholder"];
-    
-    const formTitleInput = document.getElementById('note-title');
-    if (formTitleInput) formTitleInput.placeholder = translations[currentLang]["form-placeholder-title"];
-    
-    const formBodyInput = document.getElementById('note-body');
-    if (formBodyInput) formBodyInput.placeholder = translations[currentLang]["form-placeholder-body"];
+    renderAdvancedBackgroundBubbles();
 }
 
 function handleLanguageChange(selectedLang) {
-    currentLang = selectedLang;
-    localStorage.setItem('owen_site_lang', currentLang);
-    
-    applyTranslations();
-    
-    // Force descriptions and lists to update interface languages instantly
-    if (isInternalFace) {
-        document.getElementById('wardrobe-description').innerText = translations[currentLang]["wardrobe-desc-internal"];
-    } else {
-        document.getElementById('wardrobe-description').innerText = translations[currentLang]["wardrobe-desc-external"];
-    }
-    
-    renderWardrobe();
+    currentLang = selectedLang; localStorage.setItem('owen_site_lang', currentLang);
+    applyTranslations(); renderWardrobe(); renderExercises(); renderFloatingChats('notes'); renderFloatingChats('exercises');
 }
 
-/* --- ACCESS TUNNEL CONTROLLERS --- */
+/* --- TUNNEL HANDLERS --- */
 function enterInternalFace() {
+    const userInput = prompt(translations[currentLang]["passcode-prompt"] || "Please enter the passcode:");
+    if (userInput !== "20010306") { alert(translations[currentLang]["passcode-error"] || "Access Restricted."); return; }
     isInternalFace = true;
-    document.getElementById('tunnel-view-label').innerText = translations[currentLang]["tunnel-badge-internal"];
-    document.getElementById('tunnel-view-label').className = "status-badge internal";
-    document.getElementById('wardrobe-description').innerText = translations[currentLang]["wardrobe-desc-internal"];
-    
-    document.getElementById('btn-toggle-internal').classList.add('hidden');
-    document.getElementById('btn-toggle-external').classList.remove('hidden');
-    document.getElementById('wardrobe-admin-sidebar').classList.remove('hidden');
-    renderWardrobe();
+    document.querySelectorAll('.btn-toggle-internal').forEach(b => b.classList.add('hidden'));
+    document.querySelectorAll('.btn-toggle-external').forEach(b => b.classList.remove('hidden'));
+    document.querySelectorAll('.wardrobe-admin-sidebar, .exercises-admin-sidebar').forEach(s => s.classList.remove('hidden'));
+    populateAdminTagSelectors(); renderWardrobe(); renderExercises(); renderFloatingChats('notes'); renderFloatingChats('exercises');
 }
 
 function exitInternalFace() {
-    isInternalFace = false;
-    resetFormState();
-    document.getElementById('tunnel-view-label').innerText = translations[currentLang]["tunnel-badge-external"];
-    document.getElementById('tunnel-view-label').className = "status-badge external";
-    document.getElementById('wardrobe-description').innerText = translations[currentLang]["wardrobe-desc-external"];
-    
-    document.getElementById('btn-toggle-external').classList.add('hidden');
-    document.getElementById('btn-toggle-internal').classList.remove('hidden');
-    document.getElementById('wardrobe-admin-sidebar').classList.add('hidden');
-    renderWardrobe();
+    isInternalFace = false; resetFormState(); resetExFormState();
+    document.querySelectorAll('.btn-toggle-external').forEach(b => b.classList.add('hidden'));
+    document.querySelectorAll('.btn-toggle-internal').forEach(b => b.classList.remove('hidden'));
+    document.querySelectorAll('.wardrobe-admin-sidebar, .exercises-admin-sidebar').forEach(s => s.classList.add('hidden'));
+    renderWardrobe(); renderExercises(); renderFloatingChats('notes'); renderFloatingChats('exercises');
 }
 
-/* --- VIDEO SLIDESHOW CONTROLS --- */
-function initSlideshow() {
-    showSlides(slideIndex);
-    slideshowTimer = setInterval(function() {
-        moveSlides(1);
-    }, 5000);
+function populateAdminTagSelectors() {
+    const optionsHtml = `<option value="">-- Tag --</option>` + Object.keys(tagColorsCollection).map(t => `<option value="${t}">${t}</option>`).join('');
+    if(document.getElementById('note-tag-selector')) document.getElementById('note-tag-selector').innerHTML = optionsHtml;
+    if(document.getElementById('ex-tag-selector')) document.getElementById('ex-tag-selector').innerHTML = optionsHtml;
 }
 
-function moveSlides(n) {
-    clearInterval(slideshowTimer);
-    showSlides(slideIndex += n);
-    slideshowTimer = setInterval(function() {
-        moveSlides(1);
-    }, 5000);
+function loadExistingTagColor(tag, context) { if(tag && tagColorsCollection[tag]) document.getElementById(`${context}-tag-color`).value = tagColorsCollection[tag]; }
+function processInputCategoriesString(inputStr, col) {
+    const tags = inputStr.split(',').map(t => t.trim()).filter(t => t.length > 0);
+    tags.forEach(t => { if(!tagColorsCollection[t] || (col && col !== "#34495e" && col !== "#27ae60")) tagColorsCollection[t] = col || "#34495e"; });
+    localStorage.setItem('owen_tag_colors_v2', JSON.stringify(tagColorsCollection)); populateAdminTagSelectors(); return tags;
 }
 
-function currentSlide(n) {
-    clearInterval(slideshowTimer);
-    showSlides(slideIndex = n);
-    slideshowTimer = setInterval(function() {
-        moveSlides(1);
-    }, 5000);
-}
-
-function showSlides(n) {
-    let slides = document.getElementsByClassName("profile-slide");
-    let dots = document.getElementsByClassName("slide-dot");
-    
-    if (slides.length === 0) return; 
-    
-    if (n > slides.length) { slideIndex = 1; }
-    if (n < 1) { slideIndex = slides.length; }
-    
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        let video = slides[i].querySelector("video");
-        if (video) video.pause();
-    }
-    
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    
-    const activeSlide = slides[slideIndex - 1];
-    activeSlide.style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    
-    const activeVideo = activeSlide.querySelector("video");
-    if (activeVideo) {
-        activeVideo.currentTime = 0; 
-        activeVideo.play().catch(error => { console.log("Autoplay context restricted.", error); });
-    }
-}
-
-/* --- DROPZONE FILE ARCHIVING --- */
-function handleDragOver(e) { e.preventDefault(); document.getElementById('dropzone').classList.add('dragover'); }
-function handleDragLeave(e) { e.preventDefault(); document.getElementById('dropzone').classList.remove('dragover'); }
-function handleDrop(e) { e.preventDefault(); document.getElementById('dropzone').classList.remove('dragover'); processIncomingFiles(e.dataTransfer.files); }
-function handleFileSelect(e) { processIncomingFiles(e.target.files); }
-
-function processIncomingFiles(filesList) {
-    for (let i = 0; i < filesList.length; i++) {
-        const file = filesList[i];
-        if (file.type === "application/pdf" || file.name.toLowerCase().endsWith('.pdf')) {
-            if (!stagedFilesArray.some(f => f.filename === file.name)) {
-                stagedFilesArray.push({ filename: file.name, fileData: file });
-            }
-        }
-    }
-    renderStagedFilesChips();
-}
-
-function renderStagedFilesChips() {
-    const displayBox = document.getElementById('selected-files-list');
-    displayBox.innerHTML = '';
-    stagedFilesArray.forEach((fileObj, idx) => {
-        const chip = document.createElement('div');
-        chip.className = 'staged-file-chip';
-        chip.innerHTML = `<span>⚙️ ${fileObj.filename}</span><span style="cursor:pointer;color:var(--accent-red);" onclick="removeStagedFile(${idx})">✕</span>`;
-        displayBox.appendChild(chip);
-    });
-}
-
-function removeStagedFile(index) {
-    stagedFilesArray.splice(index, 1);
-    renderStagedFilesChips();
-}
-
-/* --- DUAL SEARCH + FILTER FILTRATION --- */
-function handleSearchInput() {
-    searchQuery = document.getElementById('wardrobe-search-bar').value.trim().toLowerCase();
-    renderWardrobe();
-}
-
-/* --- ADMINISTRATIVE FORM MASTER MUTATIONS --- */
+/* --- NOTES ARCHITECTURE MANAGEMENT --- */
+function handleSearchInput() { searchQuery = document.getElementById('wardrobe-search-bar').value.trim().toLowerCase(); renderWardrobe(); }
 function handleFormSubmit(event) {
     event.preventDefault();
     const editId = document.getElementById('edit-note-id').value;
-    const titleInput = document.getElementById('note-title');
-    const categoryInput = document.getElementById('note-category');
-    const bodyInput = document.getElementById('note-body');
-
-    const newFilesPaths = stagedFilesArray.map(f => {
-        const deploymentPath = "item/" + f.filename;
-        runtimeBlobDrive[deploymentPath] = URL.createObjectURL(f.fileData);
-        return deploymentPath;
-    });
+    const titleVal = document.getElementById('note-title').value.trim();
+    const catVal = document.getElementById('note-category').value;
+    const colorVal = document.getElementById('note-tag-color').value;
+    
+    const chosenTag = document.getElementById('note-tag-selector').value;
+    if(chosenTag) tagColorsCollection[chosenTag] = colorVal;
+    const finalTags = processInputCategoriesString(catVal, colorVal);
+    const paths = stagedFilesArray.map(f => { const p = "item/" + f.filename; runtimeBlobDrive[p] = URL.createObjectURL(f.fileData); return p; });
 
     if (editId) {
-        const targetNote = notesCollection.find(n => n.id == editId);
-        if (targetNote) {
-            targetNote.title = titleInput.value.trim();
-            targetNote.category = categoryInput.value;
-            targetNote.body = bodyInput.value.trim();
-            targetNote.filesList = targetNote.filesList.concat(newFilesPaths);
-        }
+        const note = notesCollection.find(n => n.id == editId);
+        if (note) { note.title = titleVal; note.categories = finalTags; note.body = document.getElementById('note-body').value.trim(); note.filesList = note.filesList.concat(paths); }
     } else {
-        const newHangerItem = {
-            id: Date.now(),
-            title: titleInput.value.trim(),
-            category: categoryInput.value,
-            filesList: newFilesPaths,
-            body: bodyInput.value.trim()
-        };
-        notesCollection.unshift(newHangerItem);
+        notesCollection.push({ id: Date.now(), title: titleVal, categories: finalTags, filesList: paths, body: document.getElementById('note-body').value.trim() });
     }
-
-    document.getElementById('wardrobe-search-bar').value = '';
-    searchQuery = '';
-    
-    resetFormState();
-    saveAndRender();
+    resetFormState(); localStorage.setItem('owen_wardrobe_v10', JSON.stringify(notesCollection)); renderWardrobe();
 }
 
-function triggerEditMode(noteId) {
-    const targetNote = notesCollection.find(n => n.id == noteId);
-    if (!targetNote) return;
-
-    document.getElementById('edit-note-id').value = targetNote.id;
-    document.getElementById('note-title').value = targetNote.title;
-    document.getElementById('note-category').value = targetNote.category;
-    document.getElementById('note-body').value = targetNote.body;
-
-    document.getElementById('form-panel-title').innerText = translations[currentLang]["form-title-edit"];
-    document.getElementById('btn-form-submit').innerText = translations[currentLang]["form-btn-submit-edit"];
-    document.getElementById('btn-cancel-edit').classList.remove('hidden');
-    
-    document.querySelector('.wardrobe-panel').scrollIntoView({ behavior: 'smooth' });
-}
-
-function resetFormState() {
-    document.getElementById('edit-note-id').value = '';
-    document.getElementById('note-title').value = '';
-    document.getElementById('note-category').value = '';
-    document.getElementById('note-body').value = '';
-    stagedFilesArray = [];
-    document.getElementById('selected-files-list').innerHTML = '';
-
-    document.getElementById('form-panel-title').innerText = translations[currentLang]["form-title-new"];
-    document.getElementById('btn-form-submit').innerText = translations[currentLang]["form-btn-submit-new"];
-    document.getElementById('btn-cancel-edit').classList.add('hidden');
-}
-
-function deleteNote(noteId) {
-    if (confirm(currentLang === 'zh' ? "確定要從衣櫥中刪除此挂置項與所有文檔嗎？" : "Permanently wipe this wardrobe hanger and all contents?")) {
-        notesCollection = notesCollection.filter(note => note.id !== noteId);
-        saveAndRender();
-    }
-}
-
-function deleteAttachedFile(noteId, fileIndex) {
-    if (confirm(currentLang === 'zh' ? "確定要刪除此附件講義連結嗎？" : "Remove this specific handout document asset?")) {
-        const targetNote = notesCollection.find(n => n.id == noteId);
-        if (targetNote) {
-            targetNote.filesList.splice(fileIndex, 1);
-            saveAndRender();
-        }
-    }
-}
-
-/* --- 2D MATRIX GRID REORDERING CALCULATIONS --- */
-function setupDragReordering() {
-    const container = document.getElementById('notes-wardrobe-list');
-    const items = container.querySelectorAll('.note-item');
-    
-    items.forEach(item => {
-        item.addEventListener('dragstart', (e) => {
-            draggedElementId = item.getAttribute('data-id');
-            item.classList.add('dragging');
-            e.dataTransfer.effectAllowed = 'move';
-        });
-
-        item.addEventListener('dragend', () => {
-            item.classList.remove('dragging');
-            finalizeNewOrderSequence();
-        });
-    });
-    container.addEventListener('dragover', handleContainerDragOver);
-}
-
-function handleContainerDragOver(e) {
-    e.preventDefault();
-    const container = document.getElementById('notes-wardrobe-list');
-    const draggingItem = document.querySelector('.dragging');
-    if (!draggingItem) return;
-
-    const closestChild = getDragAfterElement2D(container, e.clientX, e.clientY);
-    if (closestChild == null) {
-        container.appendChild(draggingItem);
-    } else {
-        container.insertBefore(draggingItem, closestChild);
-    }
-}
-
-function getDragAfterElement2D(container, mouseX, mouseY) {
-    const draggableElements = [...container.querySelectorAll('.note-item:not(.dragging)')];
-    return draggableElements.reduce((closest, child) => {
-        const box = child.getBoundingClientRect();
-        const boxCenterX = box.left + box.width / 2;
-        const boxCenterY = box.top + box.height / 2;
-        const distance = Math.sqrt(Math.pow(mouseX - boxCenterX, 2) + Math.pow(mouseY - boxCenterY, 2));
-        if (distance < closest.distance) { return { distance: distance, element: child }; } else { return closest; }
-    }, { distance: Number.POSITIVE_INFINITY, element: null }).element;
-}
-
-function finalizeNewOrderSequence() {
-    const DOMNodes = [...document.getElementById('notes-wardrobe-list').querySelectorAll('.note-item')];
-    const modernOrderedIds = DOMNodes.map(node => parseInt(node.getAttribute('data-id')));
-    const temporaryReorderedStack = [];
-    modernOrderedIds.forEach(id => {
-        const matchingNode = notesCollection.find(n => n.id === id);
-        if (matchingNode) temporaryReorderedStack.push(matchingNode);
-    });
-    notesCollection = temporaryReorderedStack;
-    localStorage.setItem('owen_wardrobe_v8', JSON.stringify(notesCollection));
-}
-
-/* --- INTERACTIVE TILE STICKY CLICKS MATRIX --- */
-function setupCardInteractions() {
-    const cards = document.querySelectorAll('.note-item');
-    cards.forEach(card => {
-        const cardId = parseInt(card.getAttribute('data-id'));
-        card.addEventListener('mouseenter', () => {
-            if (stickyExpandedCardId === null) {
-                card.classList.add('expanded');
-                if (window.MathJax) MathJax.typesetPromise();
-            }
-        });
-        card.addEventListener('mouseleave', () => {
-            if (stickyExpandedCardId !== cardId) card.classList.remove('expanded');
-        });
-        card.addEventListener('click', (event) => {
-            if (event.target.tagName === 'BUTTON' || event.target.closest('.btn-preview-trigger') || event.target.classList.contains('drag-handle')) return;
-            event.stopPropagation(); 
-            if (stickyExpandedCardId === cardId) {
-                card.classList.remove('expanded');
-                stickyExpandedCardId = null;
-            } else {
-                clearAllStickyExpansions();
-                card.classList.add('expanded');
-                stickyExpandedCardId = cardId;
-                if (window.MathJax) MathJax.typesetPromise();
-            }
-        });
-    });
-}
-
-function clearAllStickyExpansions() {
-    document.querySelectorAll('.note-item').forEach(c => c.classList.remove('expanded'));
-    stickyExpandedCardId = null;
-}
-document.addEventListener('click', () => { if (stickyExpandedCardId !== null) clearAllStickyExpansions(); });
-
-/* --- DOCUMENT VIEWPORT FRAME ACTIONS --- */
-function openPreview(deploymentPath) {
-    const drawerNode = document.getElementById('preview-drawer');
-    const wrapperNode = document.getElementById('preview-frame-wrapper');
-    const titleNode = document.getElementById('preview-title');
-    const fallbackDownload = document.getElementById('fallback-download-btn');
-
-    const name = deploymentPath.split('/').pop();
-    titleNode.innerText = `${translations[currentLang]["preview-header-lbl"]}: ${name}`;
-
-    const realSource = runtimeBlobDrive[deploymentPath] || deploymentPath;
-    fallbackDownload.href = realSource;
-    fallbackDownload.setAttribute("download", name);
-
-    wrapperNode.innerHTML = `
-        <object class="preview-embed-object" data="${realSource}" type="application/pdf">
-            <p>Inline viewer missing. <a href="${realSource}" target="_blank">Direct Link access</a>.</p>
-        </object>
-    `;
-    drawerNode.classList.remove('hidden');
-    drawerNode.scrollIntoView({ behavior: 'smooth' });
-}
-
-function closePreview() {
-    const drawer = document.getElementById('preview-drawer');
-    if (drawer) drawer.classList.add('hidden');
-    const wrapper = document.getElementById('preview-frame-wrapper');
-    if (wrapper) wrapper.innerHTML = '';
-}
-
-function saveAndRender() {
-    localStorage.setItem('owen_wardrobe_v8', JSON.stringify(notesCollection));
-    renderWardrobe();
-}
-
-/**
- * Main Dynamic Wardrobe List Renderer Pipeline ($m \times 2$)
- */
 function renderWardrobe() {
-    const containerNode = document.getElementById('notes-wardrobe-list');
-    if (!containerNode) return; 
-    
-    containerNode.removeEventListener('dragover', handleContainerDragOver);
-    containerNode.innerHTML = '';
-    stickyExpandedCardId = null;
+    const node = document.getElementById('notes-wardrobe-list'); if (!node) return; node.innerHTML = '';
+    const sorted = sortAlphabeticallyCaseSensitive([...notesCollection]);
+    const filtered = sorted.filter(n => n.title.toLowerCase().includes(searchQuery));
 
-    const filteredDataset = notesCollection.filter(item => {
-        const matchesCategory = (currentFilter === 'All' || item.category === currentFilter);
-        const matchesSearch = item.title.toLowerCase().includes(searchQuery);
-        return matchesCategory && matchesSearch;
+    filtered.forEach(item => {
+        const card = document.createElement('div'); card.className = 'note-item';
+        const tagsHtml = (item.categories || ["M1 Core"]).map(t => `<span class="note-tag" style="background-color:${tagColorsCollection[t] || "#34495e"};">${t}</span>`).join(' ');
+        let filesHtml = '';
+        if(item.filesList && item.filesList.length > 0) {
+            const list = item.filesList.map((f, i) => `
+                <div class="btn-preview-trigger" onclick="openPreview('${f}', 'notes')">
+                    <span>👁️ ${f.split('/').pop()}</span>
+                    ${isInternalFace ? `<span onclick="event.stopPropagation(); deleteFile(${item.id}, ${i})" style="color:var(--accent-red); margin-left:6px;">✕</span>` : ''}
+                </div>`).join('');
+            filesHtml = `<div class="note-attachments-panel"><div class="attachments-flex-row">${list}</div></div>`;
+        }
+        card.innerHTML = `
+            <div class="note-title-banner"><h3>${item.title}</h3><div class="tags-container-wrapper">${tagsHtml}</div></div>
+            <div class="note-body-content">${item.body}</div>${filesHtml}
+            ${isInternalFace ? `<div class="admin-actions-row"><button onclick="triggerEditMode(${item.id})" class="btn-edit">Edit</button><button onclick="deleteNote(${item.id})" class="btn-danger">Delete</button></div>` : ''}
+        `;
+        node.appendChild(card);
     });
+    setupCardInteractions('.note-item');
+}
+function deleteNote(id) { if(confirm("Delete note?")) { notesCollection = notesCollection.filter(n => n.id !== id); localStorage.setItem('owen_wardrobe_v10', JSON.stringify(notesCollection)); renderWardrobe(); } }
+function deleteFile(id, idx) { const n = notesCollection.find(x => x.id == id); if(n) { n.filesList.splice(idx, 1); localStorage.setItem('owen_wardrobe_v10', JSON.stringify(notesCollection)); renderWardrobe(); } }
+function triggerEditMode(id) {
+    const n = notesCollection.find(x => x.id == id); if(!n) return;
+    document.getElementById('edit-note-id').value = n.id; document.getElementById('note-title').value = n.title;
+    document.getElementById('note-category').value = (n.categories || []).join(', '); document.getElementById('note-body').value = n.body;
+    document.getElementById('btn-cancel-edit').classList.remove('hidden');
+}
+function resetFormState() {
+    document.getElementById('edit-note-id').value = ''; document.getElementById('note-title').value = ''; document.getElementById('note-category').value = ''; document.getElementById('note-body').value = ''; stagedFilesArray = [];
+    document.getElementById('selected-files-list').innerHTML = ''; document.getElementById('btn-cancel-edit').classList.add('hidden');
+}
 
-    if (filteredDataset.length === 0) {
-        const errorMsg = searchQuery !== '' ? translations[currentLang]["msg-no-match"] : translations[currentLang]["msg-empty-wardrobe"];
-        containerNode.innerHTML = `<p style="color:var(--text-muted); font-style:italic; text-align:center; padding:2rem; grid-column: span 2;">${errorMsg}</p>`;
-        return;
+/* --- EXERCISES LOGIC CORE --- */
+function handleExerciseSearch() { exerciseSearchQuery = document.getElementById('exercises-search-bar').value.trim().toLowerCase(); renderExercises(); }
+function handleExerciseFormSubmit(event) {
+    event.preventDefault();
+    const editId = document.getElementById('edit-ex-id').value;
+    const titleVal = document.getElementById('ex-title').value.trim();
+    const catVal = document.getElementById('ex-category').value;
+    const colorVal = document.getElementById('ex-tag-color').value;
+
+    const chosenTag = document.getElementById('ex-tag-selector').value;
+    if (chosenTag) tagColorsCollection[chosenTag] = colorVal;
+    const finalTags = processInputCategoriesString(catVal, colorVal);
+    const paths = exStagedFilesArray.map(f => { const p = "exercise/" + f.filename; runtimeBlobDrive[p] = URL.createObjectURL(f.fileData); return p; });
+
+    if (editId) {
+        const ex = exercisesCollection.find(e => e.id == editId);
+        if (ex) { ex.title = titleVal; ex.categories = finalTags; ex.filesList = ex.filesList.concat(paths); }
+    } else {
+        exercisesCollection.push({ id: Date.now(), title: titleVal, categories: finalTags, filesList: paths });
+    }
+    resetExFormState(); localStorage.setItem('owen_exercises_v4', JSON.stringify(exercisesCollection)); renderExercises();
+}
+
+function renderExercises() {
+    const node = document.getElementById('exercises-list'); if (!node) return; node.innerHTML = '';
+    const sorted = sortAlphabeticallyCaseSensitive([...exercisesCollection]);
+    const filtered = sorted.filter(e => e.title.toLowerCase().includes(exerciseSearchQuery));
+
+    filtered.forEach(item => {
+        const card = document.createElement('div'); card.className = 'exercise-item note-item unified-ex-card';
+        const tagsHtml = (item.categories || ["Difficult"]).map(t => `<span class="note-tag" style="background-color:${tagColorsCollection[t] || "#27ae60"};">${t}</span>`).join(' ');
+        let filesHtml = '';
+        if(item.filesList && item.filesList.length > 0) {
+            const list = item.filesList.map((f, i) => `
+                <div class="btn-preview-trigger" onclick="openPreview('${f}', 'exercises')">
+                    <span>📄 Sheet Pack: ${f.split('/').pop()}</span>
+                    ${isInternalFace ? `<span onclick="event.stopPropagation(); deleteExFile(${item.id}, ${i})" style="color:var(--accent-red); margin-left:6px;">✕</span>` : ''}
+                </div>`).join('');
+            filesHtml = `<div class="note-attachments-panel"><div class="attachments-flex-row">${list}</div></div>`;
+        }
+        card.innerHTML = `
+            <div class="note-title-banner bg-exercise"><h3>${item.title}</h3><div class="tags-container-wrapper">${tagsHtml}</div></div>
+            <div class="note-body-content description-suppressed-label">Custom examination scripts bundle package ready for viewport review testing.</div>${filesHtml}
+            ${isInternalFace ? `<div class="admin-actions-row"><button onclick="triggerExEditMode(${item.id})" class="btn-edit">Edit</button><button onclick="deleteEx(${item.id})" class="btn-danger">Delete</button></div>` : ''}
+        `;
+        node.appendChild(card);
+    });
+    setupCardInteractions('.exercise-item');
+}
+function triggerExEditMode(id) {
+    const ex = exercisesCollection.find(e => e.id == id); if(!ex) return;
+    document.getElementById('edit-ex-id').value = ex.id; document.getElementById('ex-title').value = ex.title;
+    document.getElementById('ex-category').value = (ex.categories || []).join(', '); document.getElementById('btn-ex-cancel').classList.remove('hidden');
+}
+function resetExFormState() {
+    document.getElementById('edit-ex-id').value = ''; document.getElementById('ex-title').value = ''; document.getElementById('ex-category').value = ''; exStagedFilesArray = [];
+    document.getElementById('ex-selected-files').innerHTML = ''; document.getElementById('btn-ex-cancel').classList.add('hidden');
+}
+function deleteEx(id) { if(confirm("Delete exercise sheet?")) { exercisesCollection = exercisesCollection.filter(e => e.id !== id); localStorage.setItem('owen_exercises_v4', JSON.stringify(exercisesCollection)); renderExercises(); } }
+function deleteExFile(id, idx) { const ex = exercisesCollection.find(e => e.id == id); if(ex) { ex.filesList.splice(idx, 1); localStorage.setItem('owen_exercises_v4', JSON.stringify(exercisesCollection)); renderExercises(); } }
+
+/* --- FLOATING INSTAGRAM SIDE CHAT MATRIX --- */
+function renderFloatingChats(feedType) {
+    const container = document.getElementById(`${feedType}-chat-feed`); if(!container) return;
+    container.innerHTML = '';
+    const store = feedType === 'notes' ? notesChatStore : exercisesChatStore;
+
+    if(store.length === 0) {
+        container.innerHTML = `<div class="empty-chat-lbl">No comments yet. Start the conversation!</div>`; return;
     }
 
-    filteredDataset.forEach(item => {
-        const cssClassTag = 'tag-' + item.category.toLowerCase().replace(/ /g, '-').replace(/&/g, '');
-        
-        let attachmentsBlockHtml = '';
-        if (item.filesList && item.filesList.length > 0) {
-            let linksHtml = '';
-            item.filesList.forEach((fileUrl, index) => {
-                const filenameClean = fileUrl.split('/').pop();
-                const fileDeleteButton = isInternalFace 
-                    ? `<span onclick="event.stopPropagation(); deleteAttachedFile(${item.id}, ${index})" style="color:var(--accent-red); font-weight:bold; margin-left:6px;" title="Delete file asset">✕</span>` 
-                    : '';
-
-                linksHtml += `
-                    <div class="btn-preview-trigger" onclick="openPreview('${fileUrl}')">
-                        <span>👁️ ${filenameClean}</span> ${fileDeleteButton}
-                    </div>`;
-            });
-            attachmentsBlockHtml = `
-                <div class="note-attachments-panel">
-                    <div class="attachment-row-label">${translations[currentLang]["lbl-handout-assets"]}</div>
-                    <div class="attachments-flex-row">${linksHtml}</div>
-                </div>`;
-        }
-
-        let adminRowHtml = '';
-        if (isInternalFace) {
-            adminRowHtml = `
-                <div class="admin-actions-row">
-                    <button onclick="triggerEditMode(${item.id})" class="btn-edit">${translations[currentLang]["btn-lbl-edit"]}</button>
-                    <button onclick="deleteNote(${item.id})" class="btn-danger">${translations[currentLang]["btn-lbl-wipe"]}</button>
-                </div>`;
-        }
-
-        const isDraggableState = (isInternalFace && currentFilter === 'All' && searchQuery === '');
-
-        const itemCard = document.createElement('div');
-        itemCard.className = `note-item ${isDraggableState ? 'draggable' : ''}`;
-        if (isDraggableState) itemCard.setAttribute('draggable', 'true');
-        itemCard.setAttribute('data-id', item.id);
-
-        itemCard.innerHTML = `
-            <div class="note-header">
-                <div class="note-header-left">
-                    <span class="drag-handle">☰</span>
-                    <div>
-                        <h3>${item.title}</h3>
-                        <div style="margin-top:0.3rem;"><span class="note-tag ${cssClassTag}">${item.category}</span></div>
-                    </div>
-                </div>
+    store.forEach(msg => {
+        const bubble = document.createElement('div'); bubble.className = 'chat-bubble-item';
+        bubble.innerHTML = `
+            <div class="chat-bubble-meta">
+                <span class="chat-user">@${msg.name}</span>
+                <span class="chat-time">${msg.timestamp}</span>
+                ${isInternalFace ? `<span onclick="deleteFloatingMessage('${feedType}', ${msg.id})" class="btn-chat-delete-admin">Delete</span>` : ''}
             </div>
-            <div class="note-body-content">${item.body.replace(/\n/g, '<br>')}</div>
-            ${attachmentsBlockHtml}
-            ${adminRowHtml}
+            <div class="chat-bubble-text">${msg.text}</div>
         `;
-        containerNode.appendChild(itemCard);
+        container.appendChild(bubble);
     });
-
-    setupCardInteractions();
-    if (isDraggableState) setupDragReordering();
-    if (window.MathJax) window.MathJax.typesetPromise();
+    container.scrollTop = container.scrollHeight;
 }
 
-function switchTab(event, sectionId) {
-    document.querySelectorAll('.tab-link').forEach(tab => tab.classList.remove('active'));
-    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-    event.target.classList.add('active');
-    document.getElementById(sectionId).classList.add('active');
-    closePreview();
+function postFloatingComment(event, feedType) {
+    event.preventDefault();
+    const nameNode = document.getElementById(`${feedType}-chat-name`);
+    const textNode = document.getElementById(`${feedType}-chat-text`);
+    if(!nameNode.value.trim() || !textNode.value.trim()) return;
+
+    const now = new Date();
+    const timeStr = String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+
+    const newMsg = { id: Date.now(), name: nameNode.value.trim(), text: textNode.value.trim(), timestamp: timeStr };
+
+    if(feedType === 'notes') { notesChatStore.push(newMsg); localStorage.setItem('owen_notes_chats', JSON.stringify(notesChatStore)); }
+    else { exercisesChatStore.push(newMsg); localStorage.setItem('owen_ex_chats', JSON.stringify(exercisesChatStore)); }
+
+    textNode.value = ''; renderFloatingChats(feedType);
 }
 
-/* --- manifest backup files logic mapping matrix sets --- */
-function exportNotesFile() {
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(notesCollection, null, 2));
-    const downloadAnchor = document.createElement('a');
-    downloadAnchor.setAttribute("href", dataStr);
-    downloadAnchor.setAttribute("download", "owen_wardrobe_manifest.json");
-    document.body.appendChild(downloadAnchor);
-    downloadAnchor.click();
-    downloadAnchor.remove();
+function deleteFloatingMessage(feedType, id) {
+    if(!confirm("Permanently wipe comment feedback item?")) return;
+    if(feedType === 'notes') { notesChatStore = notesChatStore.filter(m => m.id !== id); localStorage.setItem('owen_notes_chats', JSON.stringify(notesChatStore)); }
+    else { exercisesChatStore = exercisesChatStore.filter(m => m.id !== id); localStorage.setItem('owen_ex_chats', JSON.stringify(exercisesChatStore)); }
+    renderFloatingChats(feedType);
 }
 
-function uploadNotesFile(event) {
-    const fileReader = new FileReader();
-    const targetFile = event.target.files[0];
-    if (!targetFile) return;
+/* --- GEMINI AI LIVE MODEL BRIEF OVERLAYS --- */
+function invokeGeminiExplanation(subjectCode) {
+    const heading = document.getElementById('ai-subject-code-heading');
+    const brief = document.getElementById('ai-briefing-content-node');
+    const modal = document.getElementById('gemini-ai-modal');
+    if(!geminiAiKnowledgeBase[subjectCode]) return;
+    
+    heading.innerText = `${subjectCode} — Gemini AI Briefing`;
+    brief.innerHTML = currentLang === 'zh' ? geminiAiKnowledgeBase[subjectCode].zh : geminiAiKnowledgeBase[subjectCode].en;
+    modal.classList.remove('hidden'); document.body.style.overflow = "hidden";
+}
+function closeGeminiModal() { document.getElementById('gemini-ai-modal').classList.add('hidden'); document.body.style.overflow = ""; }
 
-    fileReader.onload = function(e) {
-        try {
-            const uploadedData = JSON.parse(e.target.result);
-            if (Array.isArray(uploadedData)) {
-                notesCollection = uploadedData.concat(notesCollection);
-                saveAndRender();
-                alert(currentLang === 'zh' ? "數據庫同步還原成功！🎉" : "Database properties synchronized successfully! 🎉");
-            } else { alert("Malformed block layout rules schema configuration matrix matching."); }
-        } catch (err) { alert("Parsing incoming manifest configuration backup array metrics parameters blueprint failed."); }
-    };
-    fileReader.readAsText(targetFile);
-    event.target.value = '';
+/* --- FIXED CAROUSEL SLIDESHOW OPERATIONS --- */
+function initSlideshow() { 
+    showSlides(slideIndex); 
+}
+function moveSlides(n) { 
+    showSlides(slideIndex += n); 
+}
+function currentSlide(n) { 
+    showSlides(slideIndex = n); 
+}
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("profile-slide");
+    let dots = document.getElementsByClassName("slide-dot");
+    if (!slides || slides.length === 0) return;
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        if (dots[i]) dots[i].className = dots[i].className.replace(" active", "");
+    }
+    if (slides[slideIndex - 1]) slides[slideIndex - 1].style.display = "block";
+    if (dots[slideIndex - 1]) dots[slideIndex - 1].className += " active";
 }
 
-// Global script initializers on application frame deployment loads
-window.onload = function() { 
-    applyTranslations(); // Fire i18n static mapper trees immediately
+/* --- RUNTIME ROUTINES AND TAB CONTROLS --- */
+function openPreview(path, space) {
+    const s = space === 'exercises' ? 'ex-' : '';
+    const drawer = document.querySelector('.' + s + 'preview-drawer');
+    const wrapper = document.querySelector('.' + s + 'preview-frame-wrapper');
+    const title = document.querySelector('.' + s + 'preview-title');
+    const download = document.querySelector('.' + s + 'fallback-download-btn');
+    const name = path.split('/').pop();
+
+    title.innerText = name;
+    const realSrc = runtimeBlobDrive[path] || path;
+    download.href = realSrc; download.setAttribute("download", name);
+    wrapper.innerHTML = `<iframe src="${realSrc}" width="100%" height="100%" style="border:none;"></iframe>`;
+    drawer.classList.remove('hidden'); drawer.scrollIntoView({ behavior: 'smooth' });
+}
+function closePreview() { document.querySelector('.preview-drawer').classList.add('hidden'); document.querySelector('.preview-frame-wrapper').innerHTML = ''; }
+function closeExPreview() { document.querySelector('.ex-preview-drawer').classList.add('hidden'); document.querySelector('.ex-preview-frame-wrapper').innerHTML = ''; }
+
+function setupCardInteractions(sel) {
+    document.querySelectorAll(sel).forEach(card => {
+        card.addEventListener('mouseenter', () => card.classList.add('expanded'));
+        card.addEventListener('mouseleave', () => card.classList.remove('expanded'));
+    });
+}
+function switchTab(e, id) {
+    document.querySelectorAll('.tab-link').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    e.target.classList.add('active'); document.getElementById(id).classList.add('active');
+    closePreview(); closeExPreview();
+}
+function handleFileSelect(e) { parseFilesBuffer(e.target.files, 'notes'); }
+function handleExFileSelect(e) { parseFilesBuffer(e.target.files, 'ex'); }
+function parseFilesBuffer(files, target) {
+    for (let f of files) { if (f.name.toLowerCase().endsWith('.pdf')) { (target === 'notes' ? stagedFilesArray : exStagedFilesArray).push({ filename: f.name, fileData: f }); } }
+    target === 'notes' ? displayStagedChips() : displayExStagedChips();
+}
+function displayStagedChips() { document.getElementById('selected-files-list').innerHTML = stagedFilesArray.map(f => `<div class="staged-file-chip"><span>⚙️ ${f.filename}</span></div>`).join(''); }
+function displayExStagedChips() { document.getElementById('ex-selected-files').innerHTML = exStagedFilesArray.map(f => `<div class="staged-file-chip"><span>⚙️ ${f.filename}</span></div>`).join(''); }
+
+window.onload = function() {
+    applyTranslations(); 
     initSlideshow();
     renderWardrobe(); 
+    renderExercises();
+    renderFloatingChats('notes'); 
+    renderFloatingChats('exercises');
 };
