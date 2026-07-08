@@ -11,7 +11,7 @@
 <body>
 
     <nav>
-        <div class="logo">Owen Mok <span class="logo-sub">.maths</span></div>
+        <div class="logo"><span data-i18n="logo-name">Owen Mok</span> <span class="logo-sub">.maths</span></div>
         
         <!-- Mobile Hamburger Toggle Button -->
         <button class="mobile-nav-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
@@ -41,9 +41,9 @@
         <section id="home" class="tab-content active">
             <div class="hero">
                 <div class="hero-layout">
-                    <img src="Propic.png" alt="Owen Mok" class="profile-photo">
+                    <img src="assets/Propic.png" alt="Owen Mok" class="profile-photo">
                     <div class="hero-text">
-                        <h1>Owen Mok</h1>
+                        <h1 data-i18n="logo-name">Owen Mok</h1>
                         <p class="hero-tagline" data-i18n="hero-tagline">CUHK BSc & MSc in Mathematics | M1 & Olympiad Specialist</p>
                         <p class="hero-philosophy" data-i18n="hero-philosophy">
                             "True mastery is understanding <strong>why</strong> a formula works, not just memorizing how it looks. 
@@ -129,7 +129,7 @@
                     <div class="profile-slide fade">
                         <a href="https://www.instagram.com/p/DYmodYuNpkM/" target="_blank" class="video-slide-link">
                             <video class="slide-video-element" autoplay muted playsinline loop poster="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1000&q=80">
-                                <source src="jayden.mp4" type="video/mp4">
+                                <source src="assets/jayden.mp4" type="video/mp4">
                             </video>
                             <div class="slide-caption"><span data-i18n="slide-cap-1">🎯 HKDSE M1: Summer Course </span> <span class="ig-action-lbl" data-i18n="slide-ig-click">(Click to watch full video on IG)</span></div>
                         </a>
@@ -139,6 +139,8 @@
                 </div>
                 <div class="slideshow-dots">
                     <span class="slide-dot" onclick="currentSlide(1)"></span>
+                    <span class="slide-dot" onclick="currentSlide(2)"></span>
+                    <span class="slide-dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
 
@@ -174,6 +176,7 @@
 
                     <div class="wardrobe-workspace">
                         <div class="wardrobe-main" style="flex: 1; min-width: 100%;">
+                            <!-- Re-inserted structural iframe preview pane for Notes viewport display -->
                             <div class="preview-drawer preview-panel hidden">
                                 <div class="preview-header">
                                     <span class="preview-title" data-i18n="preview-header-lbl">Document Viewer</span>
@@ -217,6 +220,7 @@
 
                     <div class="wardrobe-workspace">
                         <div class="wardrobe-main" style="flex: 1; min-width: 100%;">
+                            <!-- Re-inserted structural iframe preview pane for Exercises viewport display -->
                             <div class="ex-preview-drawer preview-panel hidden">
                                 <div class="preview-header">
                                     <span class="ex-preview-title" data-i18n="preview-header-lbl">Document Viewer</span>
@@ -255,7 +259,7 @@
                         <span class="mail-badge personal" data-i18n="mail-badge-personal">Personal Contact</span>
                         <span class="mail-icon">✉️</span>
                     </div>
-                    <h4>Owen Mok</h4>
+                    <h4 data-i18n="logo-name">Owen Mok</h4>
                     <p class="mail-address-link"><a href="mailto:owenmok202@outlook.com">owenmok202@outlook.com</a></p>
                     <span class="mail-use-personal" data-i18n="mail-use-personal">Best for pure research collaboration and mathematical inquiries.</span>
                     

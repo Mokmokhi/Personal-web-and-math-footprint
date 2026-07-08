@@ -1,6 +1,7 @@
 // --- COMPLETE TRANSLATION ENGINE MATRIX ---
 const translations = {
     "en": {
+        "logo-name": "Owen Mok",
         "nav-home": "Home Profile",
         "nav-wardrobe": "Math Wardrobe",
         "nav-exercises": "Self-made Exercises",
@@ -64,13 +65,13 @@ const translations = {
         "exercises-title": "📝 Self-made Problem Sets & Exercises",
         "exercises-desc-external": "Explore custom written problems featuring unique computational concepts and systematic analysis blueprints.",
         
-        // Form Placeholders Mapping Definitions
         "ph-search-notes": "Search notes...",
         "ph-search-exercises": "Search exercises...",
         "ph-chat-nickname": "Nickname",
         "ph-chat-msg": "Send message..."
     },
     "zh": {
+        "logo-name": "莫裕康",
         "nav-home": "個人簡介",
         "nav-wardrobe": "數學筆記衣櫥",
         "nav-exercises": "原創練習題庫",
@@ -130,11 +131,10 @@ const translations = {
         "board-feedback-title": "即時留言反饋板",
         "chat-post-btn": "發布留言",
         "ai-modal-footer-brand": "由 Google Gemini 2026 人工智慧模型整合引擎提供技術支援",
-        "footer-copyright": "版權所有 &copy; 麥歐文與 Google Gemini 2026。保留所有權利。",
+        "footer-copyright": "版權所有 &copy; 莫裕康與 Google Gemini 2026。保留所有權利。",
         "exercises-title": "📝 原創專題命題與特訓練習卷",
         "exercises-desc-external": "盡情探索揉合高級運算思維同埋系統化分析藍圖嘅自家編製練習題庫。",
         
-        // Placeholders Mapping Form Strings
         "ph-search-notes": "搜尋筆記...",
         "ph-search-exercises": "搜尋練習...",
         "ph-chat-nickname": "網名 / 暱稱",
@@ -147,6 +147,9 @@ const defaultTagColors = { "M1 Core": "#e67e22", "Pure Math": "#9b59b6", "Calcul
 
 let loadedNotes = [];
 let loadedExercises = [];
+
+let searchQuery = "";
+let exerciseSearchQuery = "";
 
 const LIVE_DB_FEEDBACK_API = "https://owenmok-maths-portal-default-rtdb.firebaseio.com/comments";
 
@@ -189,9 +192,10 @@ async function syncFeedbackBoardOnline(feedType, action = "GET", payload = null)
     }
 }
 
+// Fixed Preloader Pipeline: Read straight from your build engine asset root path
 async function loadStaticManifestData() {
     try {
-        const response = await fetch('data.json');
+        const response = await fetch('assets/data.json');
         if (!response.ok) throw new Error("Failed to fetch asset manifest json.");
         const data = await response.json();
         loadedNotes = data.notes || [];
@@ -229,7 +233,6 @@ function matchSearchQuery(item, queryStr) {
     return matchesTitle || matchesBody || matchesCategory || matchesFiles;
 }
 
-// Taiwanese Professional Math nomenclature style tracking map array configuration
 const coursesDataStore = [
     { code: "CSCI 3100", tier: "BSc", en: "Software Engineering", zh: "軟體工程" },
     { code: "CSCI 3320", tier: "BSc", en: "Fund. of Machine Learning", zh: "機器學習基礎" },
@@ -249,7 +252,7 @@ const coursesDataStore = [
 ];
 
 const geminiAiKnowledgeBase = {
-    "CSCI 3100": { en: "<strong>Software Engineering:</strong> Workflow cycles, agile tracking models, and structured deployment designs.", zh: "<strong>軟體工程：</strong> 研究系統級程式碼開發生命週期流程、軟體架構設計模式與大型軟體部署優化。" },
+    "CSCI 3100": { en: "<strong>Software Engineering:</strong> Workflow cycles, agile tracking models, and structured deployment designs.", zh: "<strong>軟體工程：</strong> 研究系統級程式碼開發生命週期流程、軟體架跡設計模式與大型軟體部署優化。" },
     "CSCI 3320": { en: "<strong>Fundamentals of Machine Learning:</strong> Algorithmic focus on classification matrices, structural vector parameters, and optimization metrics.", zh: "<strong>機器學習基礎：</strong> 重點探討線性分類矩陣、多層神經網路權重優化、以及統計預測模型的收斂規律。" },
     "MATH 3040": { en: "<strong>Fields and Galois Theory:</strong> Symmetries of radical fields extensions, tracking polynomial limits solvability shapes.", zh: "<strong>體論與伽羅瓦理論：</strong> 探討多項式根式可解性判別準則、體擴張（Field Extension）結構、及利用群論剖析方程對稱性。" },
     "MATH 3270": { en: "<strong>Ordinary Differential Equations:</strong> Linear algorithms modeling boundary stability frameworks.", zh: "<strong>常微分方程：</strong> 線性微分方程組求解、定性分析穩定性、解的唯一性定理及邊界值問題。" },
@@ -299,7 +302,6 @@ function applyTranslations() {
         }
     });
     
-    // Dynamic Form Attributes Sync Refinement Engine
     const targetMap = translations[currentLang];
     if (document.getElementById('wardrobe-search-bar')) {
         document.getElementById('wardrobe-search-bar').placeholder = targetMap["ph-search-notes"];
@@ -308,7 +310,6 @@ function applyTranslations() {
         document.getElementById('exercises-search-bar').placeholder = targetMap["ph-search-exercises"];
     }
     
-    // Setup Feedback Fields placeholders arrays triggers
     const nicknameInputs = ['notes-chat-name', 'exercises-chat-name'];
     const msgTextareas = ['notes-chat-text', 'exercises-chat-text'];
     
@@ -483,7 +484,24 @@ function postFloatingComment(event, feedType) {
     textNode.value = ''; 
 }
 
+function invokeGeminiExplanation(subjectCode) {
+    const heading = document.getElementById('ai-subject-code-heading');
+    const brief = document.getElementById('ai-briefing-content-node');
+    const modal = document.getElementById('gemini-ai-modal');
+    if(!geminiAiKnowledgeBase[subjectCode]) return;
+    
+    heading.innerText = `${subjectCode} — Gemini AI Briefing`;
+    brief.innerHTML = currentLang === 'zh' ? geminiAiKnowledgeBase[subjectCode].zh : geminiAiKnowledgeBase[subjectCode].en;
+    modal.classList.remove('hidden'); 
+    document.body.style.overflow = "hidden";
+}
+function closeGeminiModal() { 
+    document.getElementById('gemini-ai-modal').classList.add('hidden'); 
+    document.body.style.overflow = ""; 
+}
+
 /* --- CAROUSEL SLIDESHOW --- */
+let slideIndex = 1;
 function initSlideshow() { showSlides(slideIndex); }
 function moveSlides(n) { showSlides(slideIndex += n); }
 function currentSlide(n) { showSlides(slideIndex = n); }

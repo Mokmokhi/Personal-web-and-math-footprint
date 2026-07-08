@@ -214,7 +214,7 @@ nav .tab-link:hover, nav .tab-link.active { color: var(--white); background-colo
 .hidden { display: none !important; }
 
 /* --- RESPONSIVE WORKSPACE SCALER (MOBILE BREAKPOINTS) --- */
-@media (max-width: 950px) { 
+@media (max-width: 1050px) { 
     .notes-list { grid-template-columns: repeat(1, minmax(0, 1fr)); } 
     .workspace-with-sidebar { flex-direction: column; } 
     .floating-chat-column { width: 100%; position: static; height: 400px; } 
@@ -223,9 +223,8 @@ nav .tab-link:hover, nav .tab-link.active { color: var(--white); background-colo
 @media (max-width: 1050px) {
     .mobile-nav-toggle { display: flex; }
     
-    /* Absolute mobile stack configuration positioning context definition */
     nav .nav-tabs {
-        display: none !important; /* Critical baseline: ensure it hides completely by default */
+        display: none !important;
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -238,7 +237,6 @@ nav .tab-link:hover, nav .tab-link.active { color: var(--white); background-colo
         z-index: 999;
     }
     
-    /* High-specificity structural override selector node ruleset */
     nav #nav-menu-list.mobile-open { 
         display: flex !important; 
     }
@@ -247,7 +245,6 @@ nav .tab-link:hover, nav .tab-link.active { color: var(--white); background-colo
     nav .tab-link { display: block; padding: 0.8rem 2rem; margin: 0; border-radius: 0; }
     .lang-selector-wrapper { margin: 0.5rem 0 0 0; justify-content: center; }
 
-    /* Animated Hamburger Transforms (X close cross states layout definitions) */
     .mobile-nav-toggle.open .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
     .mobile-nav-toggle.open .bar:nth-child(2) { opacity: 0; }
     .mobile-nav-toggle.open .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
