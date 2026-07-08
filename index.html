@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-HK">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Owen Mok | Mathematics Tutor</title>
     
     <link rel="stylesheet" href="style.css">
-
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 
     <nav>
         <div class="logo">Owen Mok <span class="logo-sub">.maths</span></div>
-        <ul class="nav-tabs">
-            <li><a class="tab-link active" onclick="switchTab(event, 'home')" data-i18n="nav-home">Home Profile</a></li>
-            <li><a class="tab-link" onclick="switchTab(event, 'notes')" data-i18n="nav-wardrobe">Math Wardrobe</a></li>
-            <li><a class="tab-link" onclick="switchTab(event, 'exercises')" data-i18n="nav-exercises">Self-made Exercises</a></li>
-            <li><a class="tab-link" onclick="switchTab(event, 'contact')" data-i18n="nav-contact">Contact & Socials</a></li>
-            
-            <li class="nav-tunnel-wrapper">
-                <button onclick="enterInternalFace()" class="btn-nav-tunnel btn-toggle-internal" data-i18n="tunnel-btn-internal">🔑 Access Internal Face</button>
-                <button onclick="exitInternalFace()" class="btn-nav-tunnel btn-toggle-external hidden" data-i18n="tunnel-btn-external">🔒 Lock to External Face</button>
-            </li>
+        
+        <!-- Mobile Hamburger Toggle Button -->
+        <button class="mobile-nav-toggle" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
 
+        <ul class="nav-tabs" id="nav-menu-list">
+            <li><a class="tab-link active" onclick="handleNavClick(event, 'home')" data-i18n="nav-home">Home Profile</a></li>
+            <li><a class="tab-link" onclick="handleNavClick(event, 'notes')" data-i18n="nav-wardrobe">Math Wardrobe</a></li>
+            <li><a class="tab-link" onclick="handleNavClick(event, 'exercises')" data-i18n="nav-exercises">Self-made Exercises</a></li>
+            <li><a class="tab-link" onclick="handleNavClick(event, 'contact')" data-i18n="nav-contact">Contact & Socials</a></li>
+            
             <li class="lang-selector-wrapper">
-                <select id="lang-switcher" onchange="handleLanguageChange(this.value)">
-                    <option value="en">English (EN)</option>
-                    <option value="zh">繁體中文 (ZH)</option>
-                </select>
+                <button id="lang-toggle-btn" onclick="toggleLanguage()" class="lang-icon-btn">
+                    <span class="translate-symbol">🌐</span>
+                    <span id="lang-label">EN</span>
+                </button>
             </li>
         </ul>
     </nav>
@@ -50,7 +52,7 @@
                         
                         <div class="portal-redirect-wrapper">
                             <a href="https://www.aspireeducation.hk/2026-%e6%95%b8%e5%ad%b8%e6%9a%91%e6%9c%9f%e8%aa%b2%e7%a8%8b/" target="_blank" class="aspire-portal-btn">
-                                <span class="portal-icon">🏫</span> <span data-i18n="portal-btn-text">Explore My Courses at</span> <strong class="portal-brand">Aspire Education</strong>
+                                <span class="portal-icon">🏫</span> <span data-i18n="portal-btn-text">Explore My Courses at</span> <strong class="portal-brand" data-i18n="portal-brand-name">Aspire Education</strong>
                             </a>
                         </div>
                     </div>
@@ -75,7 +77,7 @@
                 </div>
                 <div class="card border-orange">
                     <h3 data-i18n="card-exp-title">🏫 Teaching Experience</h3>
-                    <p data-i18n="card-exp-body">Over <strong>5 years of professional tutoring experience</strong>. Specialized HKDSE <strong>Mathematics Module 1 (M1)</strong> Specialist at <strong>Aspire Education</strong>. Former part-time tutor of Olympiad Mathematics at <strong>HKMO</strong>, assigned to teach P.6 and Junior form Olympiad Maths.</p>
+                    <p data-i18n="card-exp-body">Over 5 years of professional tutoring experience. Specialized HKDSE <strong>Mathematics Module 1 (M1)</strong> Specialist at <strong>Aspire Education</strong>. Former part-time tutor of Olympiad Mathematics at <strong>HKMO</strong>, assigned to teach P.6 and Junior form Olympiad Maths.</p>
                 </div>
                 <div class="card border-green">
                     <h3 data-i18n="card-pedagogy-title">💡 Pedagogical Focus</h3>
@@ -145,12 +147,12 @@
                 <p class="section-subtitle" data-i18n="courses-subtitle-ai">Selected Coursework from CUHK (Click any bubble for detailed Gemini AI briefings):</p>
                 
                 <div class="curriculum-tier-container">
-                    <h3 class="tier-heading text-bsc">📜 Undergraduate Level Courses (BSc)</h3>
+                    <h3 class="tier-heading text-bsc" data-i18n="tier-bsc-title">📜 Undergraduate Level Courses (BSc)</h3>
                     <div id="bsc-courses-cloud" class="courses-bubbles-cloud flex-start-cloud"></div>
                 </div>
                 
                 <div class="curriculum-tier-container" style="margin-top: 1.8rem; border-top: 1px dashed #cbd5e1; padding-top: 1.5rem;">
-                    <h3 class="tier-heading text-msc">🎓 Postgraduate Level Courses (MSc)</h3>
+                    <h3 class="tier-heading text-msc" data-i18n="tier-msc-title">🎓 Postgraduate Level Courses (MSc)</h3>
                     <div id="msc-courses-cloud" class="courses-bubbles-cloud flex-start-cloud"></div>
                 </div>
             </div>
@@ -171,37 +173,7 @@
                     </div>
 
                     <div class="wardrobe-workspace">
-                        <div class="wardrobe-sidebar hidden wardrobe-admin-sidebar">
-                            <div class="wardrobe-panel">
-                                <h3 id="form-panel-title" data-i18n="form-title-new">Hang New Note Hanger</h3>
-                                <form id="note-form" onsubmit="handleFormSubmit(event)">
-                                    <input type="hidden" id="edit-note-id" value="">
-                                    <div class="form-group"><input type="text" id="note-title" required placeholder="Hanger Title"></div>
-                                    <div class="form-group">
-                                        <label class="input-label">🏷️ Tags:</label>
-                                        <input type="text" id="note-category" required placeholder="e.g., M1 Core, Probability, Calculus">
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="color-picker-group">
-                                            <select id="note-tag-selector" onchange="loadExistingTagColor(this.value, 'note')"><option value="">-- Tag --</option></select>
-                                            <input type="color" id="note-tag-color" value="#34495e">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div id="dropzone" class="dropzone-area">
-                                            <div class="dropzone-text" data-i18n="form-dropzone-text">📥 Drop PDFs</div>
-                                            <input type="file" id="note-files" accept=".pdf" multiple onchange="handleFileSelect(event)">
-                                        </div>
-                                        <div id="selected-files-list" class="staged-files"></div>
-                                    </div>
-                                    <div class="form-group"><textarea id="note-body" rows="3" required placeholder="Brief caption..."></textarea></div>
-                                    <button type="submit" id="btn-form-submit" class="btn-success" data-i18n="form-btn-submit-new">Hang in Wardrobe</button>
-                                    <button type="button" id="btn-cancel-edit" onclick="resetFormState()" class="btn-secondary hidden" data-i18n="form-btn-cancel">Cancel</button>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="wardrobe-main">
+                        <div class="wardrobe-main" style="flex: 1; min-width: 100%;">
                             <div class="preview-drawer preview-panel hidden">
                                 <div class="preview-header">
                                     <span class="preview-title" data-i18n="preview-header-lbl">Document Viewer</span>
@@ -218,12 +190,12 @@
                 </div>
 
                 <div class="floating-chat-column">
-                    <div class="chat-header">💬 Live Feedback Board</div>
+                    <div class="chat-header">💬 <span data-i18n="board-feedback-title">Live Feedback Board</span></div>
                     <div id="notes-chat-feed" class="chat-messages-container"></div>
                     <form onsubmit="postFloatingComment(event, 'notes')" class="chat-input-form">
-                        <input type="text" id="notes-chat-name" required placeholder="Nickname">
-                        <textarea id="notes-chat-text" rows="2" required placeholder="Send message..."></textarea>
-                        <button type="submit" class="btn-send-chat">Post</button>
+                        <input type="text" id="notes-chat-name" required>
+                        <textarea id="notes-chat-text" rows="2" required></textarea>
+                        <button type="submit" class="btn-send-chat" data-i18n="chat-post-btn">Post</button>
                     </form>
                 </div>
             </div>
@@ -234,46 +206,17 @@
             <div class="workspace-with-sidebar">
                 <div class="main-workspace-area">
                     <h2 data-i18n="exercises-title">📝 Self-made Problem Sets & Exercises</h2>
-                    <p class="wardrobe-description" data-i18n="exercises-desc-external" style="margin-bottom:1rem;">Explore custom written problems featuring unique computational concepts and systematic analysis blueprints.</p>
+                    <p class="wardrobe-description" id="exercises-desc-lbl" data-i18n="exercises-desc-external" style="margin-bottom:1rem;">Explore custom written problems featuring unique computational concepts and systematic analysis blueprints.</p>
 
                     <div class="wardrobe-controls-wrapper">
                         <div class="search-box-container">
                             <span class="search-icon">🔍</span>
-                            <input type="text" id="exercises-search-bar" oninput="handleExerciseSearch()" placeholder="Search exercises...">
+                            <input type="text" id="exercises-search-bar" oninput="handleExerciseSearch()">
                         </div>
                     </div>
 
                     <div class="wardrobe-workspace">
-                        <div class="wardrobe-sidebar hidden exercises-admin-sidebar">
-                            <div class="wardrobe-panel">
-                                <h3 id="ex-form-title" data-i18n="ex-form-new">Upload Custom Exercise Sheet</h3>
-                                <form id="exercise-form" onsubmit="handleExerciseFormSubmit(event)">
-                                    <input type="hidden" id="edit-ex-id" value="">
-                                    <div class="form-group"><input type="text" id="ex-title" required placeholder="Exercise Title"></div>
-                                    <div class="form-group">
-                                        <label class="input-label">🏷️ Tags:</label>
-                                        <input type="text" id="ex-category" required placeholder="e.g., Difficult, Algebra, Limits">
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="color-picker-group">
-                                            <select id="ex-tag-selector" onchange="loadExistingTagColor(this.value, 'ex')"><option value="">-- Tag --</option></select>
-                                            <input type="color" id="ex-tag-color" value="#27ae60">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div id="ex-dropzone" class="dropzone-area">
-                                            <div class="dropzone-text" data-i18n="form-dropzone-text">📥 Drop PDFs</div>
-                                            <input type="file" id="ex-files" accept=".pdf" multiple onchange="handleExFileSelect(event)">
-                                        </div>
-                                        <div id="ex-selected-files" class="staged-files"></div>
-                                    </div>
-                                    <button type="submit" id="btn-ex-submit" class="btn-success">Upload</button>
-                                    <button type="button" id="btn-ex-cancel" onclick="resetExFormState()" class="btn-secondary hidden" data-i18n="form-btn-cancel">Cancel</button>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="wardrobe-main">
+                        <div class="wardrobe-main" style="flex: 1; min-width: 100%;">
                             <div class="ex-preview-drawer preview-panel hidden">
                                 <div class="preview-header">
                                     <span class="ex-preview-title" data-i18n="preview-header-lbl">Document Viewer</span>
@@ -290,12 +233,12 @@
                 </div>
 
                 <div class="floating-chat-column">
-                    <div class="chat-header">💬 Live Feedback Board</div>
+                    <div class="chat-header">💬 <span data-i18n="board-feedback-title">Live Feedback Board</span></div>
                     <div id="exercises-chat-feed" class="chat-messages-container"></div>
                     <form onsubmit="postFloatingComment(event, 'exercises')" class="chat-input-form">
-                        <input type="text" id="exercises-chat-name" required placeholder="Nickname">
-                        <textarea id="exercises-chat-text" rows="2" required placeholder="Send message..."></textarea>
-                        <button type="submit" class="btn-send-chat">Post</button>
+                        <input type="text" id="exercises-chat-name" required>
+                        <textarea id="exercises-chat-text" rows="2" required></textarea>
+                        <button type="submit" class="btn-send-chat" data-i18n="chat-post-btn">Post</button>
                     </form>
                 </div>
             </div>
@@ -315,8 +258,9 @@
                     <h4>Owen Mok</h4>
                     <p class="mail-address-link"><a href="mailto:owenmok202@outlook.com">owenmok202@outlook.com</a></p>
                     <span class="mail-use-personal" data-i18n="mail-use-personal">Best for pure research collaboration and mathematical inquiries.</span>
+                    
                     <div class="whatsapp-row" style="margin-top: 1rem; border-top: 1px dashed #e2e8f0; padding-top: 0.8rem; font-size: 0.95rem;">
-                        <strong>🟢 WhatsApp Channel:</strong> 
+                        <strong data-i18n="contact-whatsapp-lbl">🟢 WhatsApp Channel:</strong> 
                         <a href="https://wa.me/85266860710" target="_blank" style="color: #27ae60; text-decoration: none; font-weight: bold; margin-left: 5px;">(+852) 6686 0710</a>
                     </div>
                 </div>
@@ -326,7 +270,7 @@
                         <span class="mail-badge academic" data-i18n="mail-badge-academic">Academic Venue</span>
                         <span class="mail-icon">🏫</span>
                     </div>
-                    <h4>Aspire Education Faculty</h4>
+                    <h4 data-i18n="contact-faculty-title">Aspire Education Faculty</h4>
                     <p class="mail-address-link"><a href="mailto:owenmok@aspire.edu.hk">owenmok@aspire.edu.hk</a></p>
                     <span class="mail-use-academic" data-i18n="mail-use-academic">Best for student course registration, syllabus questions, and institutional messages.</span>
                 </div>
@@ -367,13 +311,13 @@
                 <button class="btn-close-ai-modal" onclick="closeGeminiModal()">✕</button>
             </div>
             <div class="ai-modal-body" id="ai-briefing-content-node"></div>
-            <div class="ai-modal-footer"><span>Powered by Google Gemini AI Model Integration Engine 2026</span></div>
+            <div class="ai-modal-footer"><span data-i18n="ai-modal-footer-brand">Powered by Google Gemini AI Model Integration Engine 2026</span></div>
         </div>
     </div>
 
     <footer class="site-footer">
         <div class="footer-container">
-            <span class="footer-left">Copyright &copy; Mok Owen and Google Gemini 2026. All Rights Reserved.</span>
+            <span class="footer-left" data-i18n="footer-copyright">Copyright &copy; Mok Owen and Google Gemini 2026. All Rights Reserved.</span>
             <span class="footer-right"> Owen Mok .maths portal </span>
         </div>
     </footer>
