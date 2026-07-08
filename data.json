@@ -1,0 +1,33 @@
+{
+  "notes": [
+    { 
+      "id": "note-binomial-theorem", 
+      "categories": ["M1 Core"], 
+      "filesList": ["item/binomial_theorem_notes.pdf"],
+      "title_en": "Binomial Theorem and Mathematical Induction Notes", 
+      "title_zh": "二項式定理與數學歸納法筆記",
+      "body_en": "Comprehensive guide exploring dynamic expansions up to (a+b)^n, combination traits, and limits bounds.",
+      "body_zh": "全方位拆解去到 (a+b)^n 嘅二項式展開式、組合數性質同埋極限邊界嘅完整入屋教學。"
+    },
+    { 
+      "id": "note-trapezoidal-rule", 
+      "categories": ["Calculus"], 
+      "filesList": ["item/trapezoidal_rule_analysis.pdf"],
+      "title_en": "Estimation of Definite Integrals via Trapezoidal Rule", 
+      "title_zh": "利用梯形法則估算定積分值",
+      "body_en": "Detailed error analysis scripts calculating bounds and intervals via rule structures.",
+      "body_zh": "深度誤差分析專題，用公式結構去計邊界同埋區間嘅收斂範圍。"
+    }
+  ],
+  "exercises": [
+    { 
+      "id": "ex-random-variables", 
+      "categories": ["Difficult"], 
+      "filesList": ["exercise/random_variables_suite.pdf"],
+      "title_en": "Discrete Random Variables & Confidence Interval Suite", 
+      "title_zh": "離散隨機變量與置信區間精選練習卷",
+      "body_en": "Custom examination scripts bundle package ready for viewport review testing.",
+      "body_zh": "自家製精編考題卷軸模組，專門為進階應試同埋思維強度測驗而設。"
+    }
+  ]
+}
