@@ -3,7 +3,7 @@
     { 
       "id": "note-binomial-theorem", 
       "categories": ["M1 Core"], 
-      "filesList": ["item/binomial_theorem_notes.pdf"],
+      "filesList": ["/item/Binomial_Beamer.pdf"],
       "title_en": "Binomial Theorem and Mathematical Induction Notes", 
       "title_zh": "二項式定理與數學歸納法筆記",
       "body_en": "Comprehensive guide exploring dynamic expansions up to (a+b)^n, combination traits, and limits bounds.",
@@ -12,7 +12,7 @@
     { 
       "id": "note-trapezoidal-rule", 
       "categories": ["Calculus"], 
-      "filesList": ["item/trapezoidal_rule_analysis.pdf"],
+      "filesList": ["/item/trapezoidal_rule_analysis.pdf"],
       "title_en": "Estimation of Definite Integrals via Trapezoidal Rule", 
       "title_zh": "利用梯形法則估算定積分值",
       "body_en": "Detailed error analysis scripts calculating bounds and intervals via rule structures.",
@@ -23,7 +23,7 @@
     { 
       "id": "ex-random-variables", 
       "categories": ["Difficult"], 
-      "filesList": ["exercise/random_variables_suite.pdf"],
+      "filesList": ["/exercise/random_variables_suite.pdf"],
       "title_en": "Discrete Random Variables & Confidence Interval Suite", 
       "title_zh": "離散隨機變量與置信區間精選練習卷",
       "body_en": "Custom examination scripts bundle package ready for viewport review testing.",
