@@ -3,7 +3,7 @@
     { 
       "id": "note-binomial-theorem", 
       "categories": ["M1", "M2"], 
-      "filesList": ["assets/notes/Binomial_Theorem.pdf", "assets/item/Binomial_Read.pdf", "assets/item/Binomial_Teach.pdf"],
+      "filesList": ["assets/notes/Binomial_Theorem.pdf"],
       "title_en": "Binomial Theorem with combinatorics", 
       "title_zh": "二項式定理同組合數學",
       "body_en": "Comprehensive guide exploring dynamic expansions up to (a+b)^n, combination traits, and limits bounds.",
@@ -14,7 +14,7 @@
     { 
       "id": "exercise-junior-stat", 
       "categories": ["Core", "Statistics"], 
-      "filesList": ["assets/exercises/Junior_statistics_notes.pdf"],
+      "filesList": ["assets/exercises/Junior_statistics_exercise.pdf"],
       "title_en": "Junior Statistics Exercise", 
       "title_zh": "初中統計練習",
       "body_en": "An AI generated exercise for junior statistics, covering basic concepts and examples.",
