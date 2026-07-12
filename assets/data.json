@@ -2,12 +2,21 @@
   "notes": [
     { 
       "id": "note-binomial-theorem", 
-      "categories": ["M1", "M2"], 
+      "categories": ["M1", "M2", "PDF"], 
       "filesList": ["assets/notes/Binomial_Theorem.pdf"],
       "title_en": "Binomial Theorem with combinatorics", 
       "title_zh": "二項式定理同組合數學",
       "body_en": "Comprehensive guide exploring dynamic expansions up to (a+b)^n, combination traits, and limits bounds.",
       "body_zh": "全方位拆解去到 (a+b)^n 嘅二項式展開式、組合數性質同埋極限邊界嘅完整入屋教學。"
+    },
+    { 
+      "id": "binomial-theorem-lecture", 
+      "categories": ["M1", "M2", "Video"], 
+      "filesList": ["assets/videos/Binomial_Master_class.mp4"],
+      "title_en": "Binomial Theorem Short Lecture", 
+      "title_zh": "二項式定理短講",
+      "body_en": "A short video on the binomial theorem, including its applications and related concepts.",
+      "body_zh": "關於二項式定理的短片，包括其應用和相關想法。"
     }
   ],
   "exercises": [
@@ -19,6 +28,17 @@
       "title_zh": "初中統計練習",
       "body_en": "An AI generated exercise for junior statistics, covering basic concepts and examples.",
       "body_zh": "AI 生成嘅初中統計練習，涵蓋基本概念同例子。"
+    }
+  ],
+  "lectures": [
+    { 
+      "id": "binomial-theorem-lecture", 
+      "categories": ["M1", "M2"], 
+      "filesList": ["assets/videos/Binomial_Master_class.mp4"],
+      "title_en": "Binomial Theorem Short Lecture", 
+      "title_zh": "二項式定理短講",
+      "body_en": "A short video on the binomial theorem, including its applications and related concepts.",
+      "body_zh": "關於二項式定理的短片，包括其應用和相關想法。"
     }
   ]
 }
