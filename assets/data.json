@@ -17,6 +17,15 @@
       "title_zh": "數學歸納法",
       "body_en": "An introduction to mathematical induction, including its principles and applications.",
       "body_zh": "數學歸納法的入門介紹，包括其原理和應用。"
+    },
+    { 
+      "id": "trigonometry", 
+      "categories": ["M2", "Pure Math", "PDF"], 
+      "filesList": ["assets/notes/Trigonometry.pdf"],
+      "title_en": "Trigonometry", 
+      "title_zh": "三角學",
+      "body_en": "An introduction to trigonometry, including its principles and applications.",
+      "body_zh": "三角學的入門介紹，包括其原理和應用。"
     }
   ],
   "exercises": [
