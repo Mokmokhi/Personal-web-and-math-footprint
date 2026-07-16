@@ -37,6 +37,15 @@
       "title_zh": "初中統計練習",
       "body_en": "An AI generated exercise for junior statistics, covering basic concepts and examples.",
       "body_zh": "AI 生成嘅初中統計練習，涵蓋基本概念同例子。"
+    },
+    { 
+      "id": "exercise-differentiation-secondary", 
+      "categories": ["M1", "M2", "Calculus"], 
+      "filesList": ["assets/exercises/Differentiation_exercise.pdf"],
+      "title_en": "Differentiation Exercise", 
+      "title_zh": "微分練習",
+      "body_en": "An AI generated exercise for differentiation, covering limits, basic rules and applications.",
+      "body_zh": "AI 生成嘅微分練習，涵蓋極限、基本規則同應用。"
     }
   ]
 }
