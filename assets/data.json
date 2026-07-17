@@ -41,11 +41,20 @@
     { 
       "id": "exercise-differentiation-secondary", 
       "categories": ["M1", "M2", "Calculus"], 
-      "filesList": ["assets/exercises/Differentiation_exercise.pdf"],
+      "filesList": ["assets/exercises/Differentiation_exercises.pdf"],
       "title_en": "Differentiation Exercise", 
       "title_zh": "微分練習",
       "body_en": "An AI generated exercise for differentiation, covering limits, basic rules and applications.",
       "body_zh": "AI 生成嘅微分練習，涵蓋極限、基本規則同應用。"
+    },
+    { 
+      "id": "exercise-Probability-and-counting", 
+      "categories": ["Core", "Probability", "Counting"], 
+      "filesList": ["assets/exercises/Probability_and_counting.pdf"],
+      "title_en": "Counting, Percentage, and Probability Exercise", 
+      "title_zh": "計數、百分比同概率練習",
+      "body_en": "An AI generated exercise for counting, percentages, and probability, covering basic concepts and examples.",
+      "body_zh": "AI 生成嘅計數、百分比同概率練習，涵蓋基本概念同例子。"
     }
   ]
 }
