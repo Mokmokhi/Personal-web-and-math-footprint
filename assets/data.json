@@ -55,6 +55,15 @@
       "title_zh": "計數、百分比同概率練習",
       "body_en": "An AI generated exercise for counting, percentages, and probability, covering basic concepts and examples.",
       "body_zh": "AI 生成嘅計數、百分比同概率練習，涵蓋基本概念同例子。"
+    },
+    { 
+      "id": "exercise-Percentage", 
+      "categories": ["Core", "Percentage", "S1"], 
+      "filesList": ["assets/exercises/Percentages_exercise.pdf"],
+      "title_en": "Percentage Exercise", 
+      "title_zh": "百分比練習",
+      "body_en": "An AI generated exercise for percentages, covering basic concepts and examples.",
+      "body_zh": "AI 生成嘅百分比練習，涵蓋基本概念同例子。"
     }
   ]
 }
