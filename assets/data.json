@@ -64,6 +64,15 @@
       "title_zh": "百分比練習",
       "body_en": "An AI generated exercise for percentages, covering basic concepts and examples.",
       "body_zh": "AI 生成嘅百分比練習，涵蓋基本概念同例子。"
+    },
+    { 
+      "id": "exercise-Logarithmic-Function-and-Linear-relation", 
+      "categories": ["M1", "Logarithmic Function", "Linear Relation"], 
+      "filesList": ["assets/exercises/log_exercise.pdf"],
+      "title_en": "M1 Logarithmic Function and Linear Relation Exercise", 
+      "title_zh": "對數函數同線性關係練習",
+      "body_en": "An AI generated exercise for logarithmic functions and linear relations, covering basic concepts and examples.",
+      "body_zh": "AI 生成嘅對數函數同線性關係練習，涵蓋基本概念同例子。"
     }
   ]
 }
