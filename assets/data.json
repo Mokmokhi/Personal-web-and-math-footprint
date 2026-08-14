@@ -26,6 +26,24 @@
       "title_zh": "三角學",
       "body_en": "An introduction to trigonometry, including its principles and applications.",
       "body_zh": "三角學的入門介紹，包括其原理和應用。"
+    },
+    { 
+      "id": "2DVector", 
+      "categories": ["M2", "Pure Math", "PDF"], 
+      "filesList": ["assets/notes/M2_Textbook_2DVector.pdf"],
+      "title_en": "2D Vector", 
+      "title_zh": "二維向量",
+      "body_en": "An introduction to 2D vectors, including their properties and applications.",
+      "body_zh": "二維向量的入門介紹，包括其性質和應用。"
+    },
+    { 
+      "id": "3DVector", 
+      "categories": ["M2", "Pure Math", "PDF"], 
+      "filesList": ["assets/notes/M2_Textbook_3DVector.pdf"],
+      "title_en": "3D Vector", 
+      "title_zh": "三維向量",
+      "body_en": "An introduction to 3D vectors, including their properties and applications.",
+      "body_zh": "三維向量的入門介紹，包括其性質和應用。"
     }
   ],
   "exercises": [
