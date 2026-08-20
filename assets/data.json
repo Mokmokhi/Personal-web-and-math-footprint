@@ -91,6 +91,15 @@
       "title_zh": "對數函數同線性關係練習",
       "body_en": "An AI generated exercise for logarithmic functions and linear relations, covering basic concepts and examples.",
       "body_zh": "AI 生成嘅對數函數同線性關係練習，涵蓋基本概念同例子。"
+    },
+    { 
+      "id": "exercise-secondary-one-final-exam-1", 
+      "categories": ["Core", "Mock Exam", "S1"], 
+      "filesList": ["assets/self-made-mock/Secondary_one_final_exam_01.pdf", "assets/self-made-mock/Secondary_one_final_exam_01_marking.pdf"],
+      "title_en": "Secondary One Final Exam 1", 
+      "title_zh": "中一期末考試 1",
+      "body_en": "A mock exam for secondary one students, covering core concepts and problem-solving skills.",
+      "body_zh": "中一學生嘅模擬考試，涵蓋核心概念同解題技巧。"
     }
   ]
 }
